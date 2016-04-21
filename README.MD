@@ -22,3 +22,86 @@ build solvers and instance generators directly.
 
 An actual description of the directiories and their contents.
 Also some build instructions and documentation.
+
+# Maniphest
+
+## Top Level
+
+README.MD  -- This file
+
+my_clean.sh -- ```make clean``` for the whole research project
+
+
+## Domains
+vacuum
+tsp
+dyn_robot
+job_shop
+msa
+pancake
+scanalyzer
+dock_robot
+darts
+manufacturing
+openstacks
+rubiks
+solitaire_chess
+roadmap
+sokoban
+sudoku
+hanoi
+luigi
+grid
+sliding_tiles
+topspin
+rucksack
+vis_nav
+setcover
+logistics
+partition
+plan-it
+tplan
+motion_prim
+orc
+csp
+
+## Solvers
+search
+iterative_deepening
+bounded_depth
+blfs
+
+## Visualizations
+image
+spt_plot
+spt
+search_vis
+yapp
+
+## Utilities
+user_paths
+structs
+wrutils
+wrmath
+wrthreads
+rdb
+experiments
+pdb
+histogram
+
+## Build Tools
+ocm
+ocm2
+
+## Toys
+synthetic_graph
+make_tables
+gtk_playground
+libplayerc_caml
+
+## Learning
+learning
+bvls
+offline_fitting
+online
+
