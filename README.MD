@@ -66,42 +66,42 @@ orc
 csp
 
 ## Solvers
-search
-iterative_deepening
-bounded_depth
 blfs
+bounded_depth
+iterative_deepening
+search
 
 ## Visualizations
 image
-spt_plot
-spt
 search_vis
+spt
+spt_plot
 yapp
 
 ## Utilities
-user_paths
+experiments
+histogram
+pdb
+rdb
 structs
+user_paths
 wrutils
 wrmath
 wrthreads
-rdb
-experiments
-pdb
-histogram
 
 ## Build Tools
 ocm
 ocm2
 
 ## Toys
-synthetic_graph
-make_tables
 gtk_playground
 libplayerc_caml
+make_tables
+synthetic_graph
 
 ## Learning
-learning
 bvls
+learning
 offline_fitting
 online
 
