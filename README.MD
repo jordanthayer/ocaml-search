@@ -76,7 +76,6 @@ image
 search_vis
 spt
 spt_plot
-yapp
 
 ## Utilities
 experiments
@@ -104,4 +103,3 @@ bvls
 learning
 offline_fitting
 online
-
