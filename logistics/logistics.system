@@ -1,0 +1,14 @@
+(* System file for the domain dependent version of logistics.
+   Model after the domain independent version of logistics *)
+
+Systems:
+ "wrutils"
+ "search"
+
+Files:
+"log_instance"
+"log_heuristics"
+"log_interface"
+"instance_generation"
+
+Libraries:

@@ -1,0 +1,52 @@
+(* system file *)
+
+Systems:
+"search"
+"wrutils"
+"image"
+"rdb"
+"offline_fitting"
+
+Files:
+"grid"
+"pc_grid"
+"grid_rev_heuristics"
+"grid_algs"
+"grid_instance"
+"lineSegGrid"
+"high_obstacles"
+"gameGrid"
+"grid_demo_fshadow"
+"many_goal"
+"grid_vis_tool"
+"mazes"
+"truth_heuristics"
+"canonical_heuristic"
+"grid_inadmiss"
+"grid_interfaces"
+"grid_seedinst"
+"ladder_instance"
+"single_depression"
+
+"grid_tqs"
+"grid_bees"
+
+Libraries:
+
+Result: "grid_path" native "grid_main"
+Result: "grid_debug" nativedebug "grid_main"
+Result: "gridpath_byte" bytedebug "grid_main"
+Result: "gridpp" nativeprof "grid_main"
+
+Result: "gridboot" native "grid_bootstrap"
+
+Result: "grid_image" native "grid_image"
+
+Result: "test_retro" bytedebug "grid_test_retro"
+Result: "grid_retro" native "grid_retro_main"
+Result: "gridretro_byte" bytedebug "grid_retro_main"
+
+Result: "grid_search" native "grid_search"
+
+(* EOF *)
+

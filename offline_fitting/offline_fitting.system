@@ -1,0 +1,35 @@
+(* system file *)
+
+Systems:
+"wrutils"
+"structs"
+"learning"
+"wrmath"
+"grid"
+"sliding_tiles"
+"search"
+
+Files:
+"recorded_run"
+"run_reader"
+"fcalc"
+"structure"
+"do_regression"
+"streamed_regression"
+"batched_regression"
+"path_models"
+"single_step_model"
+"contract_modeling"
+"recorded_run_to_laso"
+
+Libraries:
+"unix"
+"bigarray"
+"lacaml"
+
+CLibraries:
+"gfortran"
+
+
+Result: "test" native "test"
+(* EOF *)

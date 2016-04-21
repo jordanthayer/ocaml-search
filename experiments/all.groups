@@ -1,0 +1,121 @@
+begin_groups
+13
+group
+7
+9 1 fuel-level 2 plane2 fl0 
+9 6 fuel-level 2 plane2 fl1 
+9 0 fuel-level 2 plane2 fl2 
+9 5 fuel-level 2 plane2 fl3 
+9 3 fuel-level 2 plane2 fl4 
+9 4 fuel-level 2 plane2 fl5 
+9 2 fuel-level 2 plane2 fl6 
+group
+8
+6 5 in 2 person7 plane1 
+6 6 in 2 person7 plane2 
+6 3 in 2 person7 plane3 
+6 0 at 2 person7 city0 
+6 7 at 2 person7 city1 
+6 2 at 2 person7 city2 
+6 1 at 2 person7 city3 
+6 4 at 2 person7 city4 
+group
+7
+8 6 fuel-level 2 plane1 fl0 
+8 5 fuel-level 2 plane1 fl1 
+8 2 fuel-level 2 plane1 fl2 
+8 4 fuel-level 2 plane1 fl3 
+8 1 fuel-level 2 plane1 fl4 
+8 3 fuel-level 2 plane1 fl5 
+8 0 fuel-level 2 plane1 fl6 
+group
+5
+12 1 at 2 plane1 city0 
+12 4 at 2 plane1 city1 
+12 0 at 2 plane1 city2 
+12 2 at 2 plane1 city3 
+12 3 at 2 plane1 city4 
+group
+5
+11 0 at 2 plane3 city0 
+11 3 at 2 plane3 city1 
+11 1 at 2 plane3 city2 
+11 4 at 2 plane3 city3 
+11 2 at 2 plane3 city4 
+group
+8
+5 2 in 2 person2 plane1 
+5 3 in 2 person2 plane2 
+5 4 in 2 person2 plane3 
+5 0 at 2 person2 city0 
+5 1 at 2 person2 city1 
+5 5 at 2 person2 city2 
+5 7 at 2 person2 city3 
+5 6 at 2 person2 city4 
+group
+5
+10 1 at 2 plane2 city0 
+10 3 at 2 plane2 city1 
+10 0 at 2 plane2 city2 
+10 2 at 2 plane2 city3 
+10 4 at 2 plane2 city4 
+group
+8
+4 6 in 2 person6 plane1 
+4 5 in 2 person6 plane2 
+4 0 in 2 person6 plane3 
+4 2 at 2 person6 city0 
+4 3 at 2 person6 city1 
+4 7 at 2 person6 city2 
+4 1 at 2 person6 city3 
+4 4 at 2 person6 city4 
+group
+7
+7 1 fuel-level 2 plane3 fl0 
+7 2 fuel-level 2 plane3 fl1 
+7 4 fuel-level 2 plane3 fl2 
+7 3 fuel-level 2 plane3 fl3 
+7 5 fuel-level 2 plane3 fl4 
+7 0 fuel-level 2 plane3 fl5 
+7 6 fuel-level 2 plane3 fl6 
+group
+8
+3 0 in 2 person1 plane1 
+3 6 in 2 person1 plane2 
+3 3 in 2 person1 plane3 
+3 7 at 2 person1 city0 
+3 5 at 2 person1 city1 
+3 4 at 2 person1 city2 
+3 1 at 2 person1 city3 
+3 2 at 2 person1 city4 
+group
+8
+2 0 in 2 person4 plane1 
+2 4 in 2 person4 plane2 
+2 7 in 2 person4 plane3 
+2 1 at 2 person4 city0 
+2 3 at 2 person4 city1 
+2 2 at 2 person4 city2 
+2 5 at 2 person4 city3 
+2 6 at 2 person4 city4 
+group
+8
+1 4 in 2 person3 plane1 
+1 3 in 2 person3 plane2 
+1 0 in 2 person3 plane3 
+1 7 at 2 person3 city0 
+1 6 at 2 person3 city1 
+1 1 at 2 person3 city2 
+1 2 at 2 person3 city3 
+1 5 at 2 person3 city4 
+group
+8
+0 7 in 2 person5 plane1 
+0 4 in 2 person5 plane2 
+0 2 in 2 person5 plane3 
+0 3 at 2 person5 city0 
+0 1 at 2 person5 city1 
+0 0 at 2 person5 city2 
+0 6 at 2 person5 city3 
+0 5 at 2 person5 city4 
+end_groups

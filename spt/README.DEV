@@ -1,0 +1,110 @@
+                       Developer's README File
+
+                             Ethan Burns
+                              2010-04-29
+
+
+0.0 Coding style
+
+ Use a style that is compatible with that of tuareg-mode in Emacs
+ (this means that you should probably be using omlet if you use VIM).
+
+ Wrap your lines at 80 characters.
+
+
+1.0 Kinds of data
+
+ There are a variety of different kinds of data.  We are concerned
+ with a few kinds: 1) Numeric data consists of floating point numbers,
+ 2) Nominal data is names or strings with no numeric relation to each
+ other like "OCaml", "C" and "Java", 3) Ordinal data is like nominal
+ data but in this case order matters like in the months of the year.
+
+ Typically a plot has two axes each showing for a single kind of data.
+ Since the scales are different, each kind of data needs a different
+ kind of axis.  Because of this, spt uses a few (currently 2)
+ different types of plots: 1) numeric by numeric plots have two
+ numeric axes and 2) numeric by nominal plots have a nominal
+ horizontal axis and a numeric vertical axis.  A numeric by numeric
+ plot is used for plotting things like lines or points on a Cartesian
+ coordinate system.  Numeric by nominal plots are used for plotting
+ things like box plots where there are a variety of sets of scalar
+ numeric (hence "numeric") data each with a distinct name (hence "by
+ nominal").  Currently there is no specific support for ordinal data
+ (although this could be *hacked* into a numeric by nominal plot).
+
+1.1 Datasets
+
+  Datasets define the style of data and how the data will look when it
+  is drawn to the plot.  A scatter plot will use a scatter_plot
+  dataset which accepts a bunch of points and draws them as
+  point-glyphs on a numeric by numeric plot.  A line dataset will draw
+  lines between points and a box plot dataset will draw box plots,
+  etc.
+
+1.1.1 Composite datasets
+
+   It is often possible to create new datasets by composing current
+   datasets.  A simple example of this is a lines_points dataset that
+   has lines connecting points.  This type of dataset is a composition
+   of a lines dataset and a scatter plot dataset.  In cases like this,
+   attempt to generalize the composition: instead of writing single
+   classes for each pair of datasets, make one class that composes a
+   list of datasets.  See Num_by_num.composite_dataset for an example.
+
+1.1.2 Creating datasets
+
+   The creation of a new dataset depends on the type of plot that will
+   draw the dataset.  For numeric by numeric datasets, you need to
+   implement the virtual methods of the Num_by_num.dataset class.
+   Optionally, if the dataset consists of only points (x-y pairs) then
+   you can inherit from the Num_by_num.points_dataset class to use
+   some shared functionality.
+
+   A residual method may need to be implemented by a dataset that
+   draws things which may extend off of the axes of the plot.  The
+   residual method ensures that there is a sufficient amount of
+   padding between the end of an axis and the end of the image surface
+   or the surrounding axis text.  An example of this is the scatter
+   plot which draws a glyph with a given radius around a point.  To
+   ensure that the glyph is never clipped by the edge of the image
+   surface or that the glyph never draws over the title text or an
+   axis of the plot, the residual function will make sure that there
+   is sufficient padding.
+
+2.0 Separation of libs
+
+ I think that it is beneficial to keep the references to external
+ libraries in a small number of easily findable places.  The Cairo
+ library is currently used to do all of the 2D drawing.  Preferably
+ all of the calls to Cairo will take place in the Drawing module or
+ maybe one or two other places.  This way we can easily change the
+ backend or even add new ones in the future.
+
+3.0 The Geometry module
+
+ The Geometry has some basic primitives in it for packing floats
+ together.  It is often more efficient to pack a bunch of floats in a
+ single record where they won't be individually boxed as opposed to
+ passing them separately.  This module is used a lot, so its functions
+ should be written under the assumption that the module will be
+ opened.
+
+ Geometry.point and Geometry.triple store 2 and 3 floats respectively.
+
+ Geometry.rectangles are used to specify an area in 2D space (for
+ example, on a plot with two numeric axes).  Rectangles can be used to
+ transform points between two different coordinate systems using the
+ Geometry.rectangle_transform function.
+
+ Geometry.ranges are used to specify an area in 1D space (for example,
+ a plot with a single numeric axis).
+
+
+4.0 Clipping
+
+    Do clipping in the source coordinate system.  If clipping is done
+    in the destination coordinate system then the dimensions may get
+    set assuming that something will be on the plot that is later
+    clipped via rounding imperfection in the transform from source to
+    destination.

@@ -1,0 +1,14 @@
+(* system file *)
+
+Systems:
+"wrutils"
+
+Files:
+"sudoku_board"
+"simple_solver"
+
+Libraries:
+
+(* Result: "grid_path" native "grid_main" *)
+
+(* EOF *)

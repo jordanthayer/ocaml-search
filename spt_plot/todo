@@ -1,0 +1,13 @@
+Still missing ways of generating latex tables in a nice generic way
+
+Colorization operators are not being passed through to the plotting
+code in any way currently. Need to fix that... optional arguments or
+maybe a global flag my scripts can read?
+
+Need to have a nice way of pushing candidate group by keys through, so
+I don't have to do that silly hack in beam_greedy alg analysis
+
+Confidence intervals are crazy loose on that data in the new system,
+but they weren't before.  What is up?
+
+scooby doo, where are you?

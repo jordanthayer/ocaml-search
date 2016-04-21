@@ -1,0 +1,27 @@
+#start data file format 4
+#pair  "wall start date"	"Sat Aug 27 7:17:11 2011"
+#pair  "wall start time"	"1314443831.2"
+#pair  "machine id"	"ai2-x86_64--GNU/Linux--Unix-64-3.12.1"
+#cols  "instance"	"sol cost"	"sol length"	"nodes expanded"	"nodes generated"	"duplicates encountered"	"raw cpu time"
+#altcols  "bootstrap_iteration"	"iteration"	"timeout"	"remaining"
+#altrow  "bootstrap_iteration"	0	1.000000	100
+34	40.000000	40	14632533	28831341	0	22.710000
+61	41.000000	41	17135477	33788657	0	26.580000
+49	39.000000	39	27538953	54454080	0	42.740000
+42	43.000000	43	40471258	80107058	0	62.850000
+64	53.000000	53	58137486	115152062	0	90.120000
+47	41.000000	41	60390133	119677282	0	93.680000
+#altrow  "bootstrap_iteration"	1	1.000000	94
+#altrow  "bootstrap_iteration"	2	2.000000	94
+#altrow  "bootstrap_iteration"	3	4.000000	94
+#altrow  "bootstrap_iteration"	4	8.000000	94
+#altrow  "bootstrap_iteration"	5	16.000000	94
+#altrow  "bootstrap_iteration"	6	32.000000	94
+#altrow  "bootstrap_iteration"	7	64.000000	94
+#altrow  "bootstrap_iteration"	8	128.000000	94
+#altrow  "bootstrap_iteration"	9	256.000000	94
+#altrow  "bootstrap_iteration"	10	512.000000	94
+#altrow  "bootstrap_iteration"	11	512.000000	94
+#altrow  "bootstrap_iteration"	12	512.000000	94
+#altrow  "bootstrap_iteration"	13	512.000000	94
+#altrow  "bootstrap_iteration"	14	512.000000	94

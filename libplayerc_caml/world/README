@@ -1,0 +1,26 @@
+------------------------------------------------------------
+Files
+------------------------------------------------------------
+kingsbury_secondfloor.cfg
+        The Kingsbury map configuration file for player/stage
+
+kingsbury_secondfloor_full_size.png
+        The full size image used to make the smaller image (only in
+        case someone wants to change it using a greater resolution).
+
+kingsbury_secondfloor.png
+        The Kingsbury hall second floor.  This is the map file used by
+        player/stage.
+
+kingsbury_secondfloor.world
+        The world description for a robot running around Kingsbury
+        hall.
+
+--------------------
+The three following files were copied from the stage source
+distribution.  They are included by the world file.
+--------------------
+
+map.inc
+pioneer.inc
+sick.inc

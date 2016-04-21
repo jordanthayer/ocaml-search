@@ -1,0 +1,19 @@
+Systems:
+"wrutils"
+"search"
+
+Files:
+"image"
+"eps"
+"ppm"
+"run_length"
+"ascii85"
+"sna4_script_image"
+
+Libraries:
+"str"
+"graphics"
+
+Result: "test" native "test"
+
+(* EOF *)

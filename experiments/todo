@@ -1,0 +1,16 @@
+Make a meta-experiment executor which will run a single alg on all domains
+
+clean up and comment code
+
+additional domains
+
+dynamic robots won't accept limit
+
+tplan is pointing at the wrong point for probpath and dom path (tpl_runs_reg)
+
+
+Run algs can't be condensed because of the way solution length
+recording is handled
+
+Will algorithms with overlapping names (weighted A* is wted_astar with
+or without duplicates for example) be a problem in the future?

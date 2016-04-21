@@ -1,0 +1,12 @@
+(* System file for constructing tables needed by contract A*.
+   We're gonna have to do this in a binary. *)
+
+Systems:
+"search"
+
+Files:
+
+Libraries:
+
+Result: "make_tables" native "mt_main"
+Result: "mt" nativeprof "mt_main"

@@ -1,0 +1,27 @@
+(* Hanoi Domain System File *)
+Systems:
+"wrutils"
+"rdb"
+"structs"
+"search"
+"pdb"
+
+Files:
+"hanoi"
+"min_hanoi"
+"hanoi_interfaces"
+"hanoi_maker"
+"bp_pdb"
+
+
+Libraries:
+
+
+Result: "hanoi" native "hanoi_main"
+Result: "hanoi_debug" bytedebug "hanoi_main"
+Result: "hanoi_prof" nativeprof "hanoi_main"
+Result: "hanoi_pdb" native "make_pdb_main"
+Result: "hanoi_pdb_debug" bytedebug "make_pdb_main"
+
+
+(* EOF *)

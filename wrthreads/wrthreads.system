@@ -1,0 +1,16 @@
+(* system file *)
+
+Systems:
+"wrutils"
+
+Files:
+"wrthreads" using threads, "camlp4o"
+"sharedq" using threads
+
+Libraries:
+"threads"
+
+(* Result: "foo" native *)
+
+
+(* EOF *)

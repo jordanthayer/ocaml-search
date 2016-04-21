@@ -1,0 +1,111 @@
+                           DEVELOPER README
+                       Last Edited: 2010-01-28
+
+This is the developer README file.  The intent of this file is to
+provide information to developers who are working to extend and or
+maintain this library.  Developers who plan on *using* this library
+should see the README file.
+
+     ------------------------------------------------------------
+                        Building test programs
+     ------------------------------------------------------------
+
+Test programs should be located in the test/ directory.  You can build
+the basic test program by issuing the command:
+
+ocamlbuild playerc_test.native
+
+or
+
+ocamlbuild playerc_test.byte
+
+     ------------------------------------------------------------
+                              Some Files
+     ------------------------------------------------------------
+
+* _tags
+
+   ocamlbuild tags for the object files for libplayerc_caml.a,
+   playerc.cma, etc.
+
+* libplayerc_caml.clib
+
+  A list of the object files names for libplayerc_caml.a.
+
+* playerc.mlpack
+
+  A list of the .ml files that will be packed as sub-modules of the
+  Playerc module.
+
+* libplayerc_caml/
+
+  Contains the C stub source for interfacing OCaml with libplayerc.
+
+* playerc/
+
+  Contains the .ml files for accessing player via OCaml.  The files in
+  this directory use the stubs in libplayerc_caml.
+
+
+     ------------------------------------------------------------
+                             Convensions
+     ------------------------------------------------------------
+
+--------------------
+Coding Style:
+
+* Google for the Linux kernel coding style and follow that for C code.
+
+* OCaml code should use tuareg-mode style indentation (I believe that
+  'omlet' for vim should be sufficient too).
+
+* All functions should have a header comment.  The following
+  sub-points are not extremely important, but it is nice for the code
+  to be consistent.
+
+** In OCaml these go under the 'let' line for the function for
+   functions defined only in .ml files.  If a function is declared in
+   a .mli file then there should be no comment in the corresponding
+   .ml file and the comment should go under the 'val' declaration in
+   the .mli file.
+
+** In C, comments go in the header file unless it is a static function
+   in which case the comment goes in the .c file.
+
+--------------------
+Stub functions:
+
+* Each different portion of libplayerc should have a different
+  XXX_stubs.c file that contains its stubs.  i.e. client_stubs.c
+  position2d_stubs.c, etc.
+
+* Each stub function should have a name matching the libplayerc
+  function.  The formula is to remove the 'playerc_' from the
+  beginning of the function name and to add a '_stub' to the end.
+  i.e. playerc_client_create -> client_create_stub.
+
+* Stubs always need to convert between C types and the OCaml 'value'
+  type.  Things with the 'value' type should have '_val' appended to
+  their name to make it *very* clear.
+
+* playerc_XXX_destroy functions should be called in OCaml finalization
+  routines.  This means that they will never be called directly from
+  OCaml.
+
+* Check for errors where ever possible and throw meaningful OCaml
+  exceptions.  The functions declared in except_err.h file should be
+  used to aid this process.
+
+--------------------
+Printing:
+
+* Print things by using the functions in verb.h.
+
+** VPRINTF is for standard printing.
+
+** OPRINTF is for printing optional information.  This information
+   will only be printed if explicitly requested.
+
+** DPRINTF is for debugging information.  Use this liberally because
+   it is very helpful when going between languages and is easy to
+   find/comment-out if necessary.

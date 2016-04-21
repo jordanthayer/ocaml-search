@@ -1,0 +1,26 @@
+(* basic search routines *)
+
+Systems:
+"wrutils"
+"structs"
+"rdb"
+
+Files:
+"info"
+"bounded_depth_test"
+"dfs"
+"lds"
+"dds"
+"hbss"
+"incrs"
+"incr_dfs"
+"bounded_depth_interface"
+"interleaved_lds"
+
+Libraries:
+"unix"
+
+(* Result: "test" bytedebug "main" *)
+
+
+(* EOF *)

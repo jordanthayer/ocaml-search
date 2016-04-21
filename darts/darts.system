@@ -1,0 +1,19 @@
+Systems:
+"bounded_depth"
+"blfs"
+"wrutils"
+"user_paths"
+"rdb"
+"structs"
+
+
+Files:
+"darts"
+"darts_algs"
+"darts_runs"
+
+Libraries:
+
+Result: "darts" native "darts_main"
+Result: "darts_prof" nativeprof "darts_main"
+Result: "darts_solution" native "darts_solution"

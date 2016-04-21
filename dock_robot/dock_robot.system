@@ -1,0 +1,17 @@
+(* Dock worker robot domain system file *)
+Systems:
+"wrutils"
+"vacuum"        (* For creating condensed mazes. *)
+"user_paths"
+
+Files:
+"dock_robot_instance"
+"dock_robot"
+"dock_interfaces"
+"dock_heuristics"
+
+Libraries:
+
+Result: "dock_robot_solver" native "dock_robot_main"
+
+(* EOF *)

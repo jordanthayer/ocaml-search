@@ -1,0 +1,63 @@
+Notes on BLFS implementation
+-----------------------------
+
+models:
+
+separate costs:
+   root + delta for children at each level?
+
+separate costs quadratic in rank at each depth:
+separate costs quadratic in depth at each rank:
+   convert to table for clamping?
+separate costs quadratic in rank, with params quadratic in depth:
+
+indecision max: max of heuristic overhead from best sibling
+indecision sum:
+
+weighted scores: sum of weighted heuristic scores, with weight per depth
+  plus a constant
+
+quad weighted scores: weight is quad in depth
+
+
+-----------------------------------------
+Notes on Histograms for BLFS
+
+to find cost bound, try computing the number of nodes of each cost.
+Save space by collapsing paths with similar costs to make a
+histogram. as you descend the tree, prune away the part of the
+histogram to the right of the part that already contains the number of
+nodes we want.
+
+use equal-width bins to make convolution fast (but histogram less accurate).
+  with uneven bins, have to think about which bins to collapse when
+    adding histograms during convolution.
+  using FFT would require that child histograms be at the same
+    bin-scale as the path-cost histogram.  This is bad because in some
+    problems the child is 1/N of the parent, so histogram resolution
+    would have to grow with problem size.
+  instead, just divide the shifted bins into fractional parts to add
+    into new path-cost histogram
+  child-cost histograms should be normalized to each sum to the number
+    of children they represent.  path-cost histogram should be
+    multiplied by one minus the leaf rate to account for leaves.  all
+    weights in the path-cost histogram will refer to # nodes at the
+    current level.
+  the worst case new maximum cost is the old max + the max child cost.
+use lots of bins
+  use between 50-100% of all bins
+  during convolution, when new max or min would go outside current bin
+    bounds, multiple bin width by the appropriate power of 2.  align
+    new bins via shifting new min so they match up with old
+    somewhere.
+  after pruning (slicing off righthand side), keep same bin structure,
+    just adjust known max (or zero corresponding weights).
+  result of convolution should take up all bins if possible
+
+convolution with FFT:
+   tranform two real arrays at once with one complex FFT
+   multiply
+   inverse tranform by clever use of complex
+
+
+# EOF

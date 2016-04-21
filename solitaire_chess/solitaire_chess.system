@@ -1,0 +1,26 @@
+(* Solitaire Chess Domain System File *)
+Systems:
+"wrutils"
+"search"
+
+
+Files:
+"solitaire_chess"
+"solitaire_chess_interfaces"
+"solitaire_chess_io"
+"solitaire_chess_generator"
+
+Libraries:
+
+
+Result: "solitaire_chess" native "solitaire_chess_main"
+Result: "solitaire_chess_prof" nativeprof "solitaire_chess_main"
+
+(*
+Result: "hanoi_debug" bytedebug "hanoi_main"
+Result: "hanoi_prof" nativeprof "hanoi_main"
+Result: "hanoi_pdb" native "make_pdb_main"
+Result: "hanoi_pdb_debug" bytedebug "make_pdb_main"
+*)
+
+(* EOF *)

@@ -1,0 +1,18 @@
+Systems:
+"wrmath"
+"wrutils"
+"search"
+
+
+Files:
+"manufact_inst"
+"manufact"
+"manufact_intf"
+"manufact_heur"
+"manufact_fmt"
+"manufact_runs"
+
+Libraries:
+
+Result: "manufacture" native "manufact_main"
+Result: "manufacture_debug" nativedebug "manufact_main"

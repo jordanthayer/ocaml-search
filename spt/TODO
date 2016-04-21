@@ -1,0 +1,110 @@
+* 12x18 sheets
+
+* Drawing legends off of the plot.
+
+* Change text size based on plot size
+
+* Montage default grid fix
+
+* Legend.At uses floats instead of Length.t's.
+
+* allow reversible axis orientation (large to small)
+
+* Diagonal plots in scatter plot matrix
+
+------------------------------------------------------------
+Website
+------------------------------------------------------------
+
+* Write up a 1 page description to send around to planning-list and
+  caml-list.
+
+* Write up a comparison between SPT and gnuplot, excel, mathplotlib,
+  tikz/pgf, asymptote and S+/R.
+
+* history/changelog
+
+* link to source that generates the sample plots
+
+------------------------------------------------------------
+Datasets
+------------------------------------------------------------
+
+* Titles in tree plots
+
+* legend in sunburst plots
+
+* Datasets should somehow 'know' the size of the plot that they are
+  currently being drawn to.
+
+* kernel density estimation datasets
+   - make the dataset object
+   - automatic bandwidth selection
+
+* "boxplots with density estimations"
+
+* boxplots: 'jitter' outliers that overlap
+  (local search to minimize overlap among all outliers?)
+
+* normal quantile plots
+
+* CDF's need error bars
+
+* heatmaps - Nominal by Nominal
+
+------------------------------------------------------------
+Documentation
+------------------------------------------------------------
+
+* Write a real README file
+
+* Document all functions
+  - Generate OCaml docs
+
+* How to use within AI group
+
+------------------------------------------------------------
+Usability
+------------------------------------------------------------
+
+* GUI dialog for changing plot sizes could be better
+  (drop-down menu for units, tab cycles fields, fields of the
+  appropriate size).
+
+* Bindings
+  - C/C++
+  - Python
+  - Java?
+
+------------------------------------------------------------
+spt-it-out
+------------------------------------------------------------
+
+* plot sheets
+
+* label datasets
+
+* Barchat datasets of various kinds
+
+* The two kinds of heatmap datasets
+
+* Including other spt-it-out files
+
+* More simple numeric operations (plus, times, etc.)
+
+* Document sunburst tree plots in the manual
+
+* Change help strings to use Format.sprintf (see some examples in the
+   num-by-num code.
+
+------------------------------------------------------------
+Plot types
+------------------------------------------------------------
+
+* Nominal by nominal plots
+
+* Numeric by Ordinal (or Ranked) plots
+  Like numeric by nominal except that x-axis is a set of ranked values
+  and the datasets are drawn across both the x and y axes.
+  - Waterfall charts
+  - Run charts

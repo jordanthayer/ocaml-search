@@ -1,0 +1,6 @@
+bvls-ps.f is the original fortran 77 implementation of bounded
+variable least squares regression.
+
+bvls-ps.c is the result of running f2c on bvls-ps.f.  It needs to link
+with libf2c.a and must have access to f2c.h.
+

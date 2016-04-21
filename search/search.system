@@ -1,0 +1,404 @@
+(* Search system file *)
+Systems:
+"wrutils"
+"structs"
+"rdb"
+"learning"
+"user_paths"
+(*"robot_plan"*)
+
+
+Files:
+(* Utilities *)
+"limit"
+"timers"
+"search_interface"				(* Interface to searching*)
+"heuristic"                                     (* Heuristics *)
+"search_args"					(* Arg Handling *)
+"solution_reconstruct"
+
+"random/random_walk"
+
+(* Search Frameworks *)
+
+"best_first/hd_hybrid"                          (* Will and J's hybrid d-h hybrid *)
+"best_first/node_recorder"			(* Prints solution path information*)
+"best_first/best_first"				(* Best first search base*)
+"best_first/k_best_first"			(* K-Best first search base*)
+"best_first/msc_search"				(* Multi State Commit *)
+"best_first/round_robin_best_first"
+"best_first/round_robin_best_first_reorderable"
+"best_first/best_first_goal_on_gen"		(* tests goal at gen*)
+"best_first/reorderable_best_first"		(* BFS allowing for resorts *)
+"best_first/focal_search"			(* Focal based search *)
+"best_first/scheduled_focal"			(* focal w exp schedule *)
+"best_first/fringe"
+"best_first/benton_cushing"
+"best_first/lmix_search"
+"best_first/lmix_mark2"
+"tree_search/depth_first"			(* Tree search in dfo *)
+"tree_search/breadth_first"			(* Tree search in bfo *)
+"iterative/iterative_deepening"			(* Iterative deepening*)
+"iterative/weighted_idastar"			(* wIDA* *)
+"iterative/im"                                  (* A new incremental model *)
+"iterative/im2"
+"iterative/model_verifier"
+"iterative/incremental_model_no_depth"
+"iterative/idastar_cr_model"                    (* A bound estimation model *)
+"iterative/kre"                                 (* KRE bound estimation *)
+"iterative/gkre"                                (* GKRE bound estimation *)
+"iterative/gkre_old"                            (* GKRE bound estimation *)
+"iterative/idastar_with_estimation"             (* An IDA* model. *)
+"iterative/idastar_learned_model"               (* An IDA* model. *)
+"iterative/itsastar"
+"anytime/continued_search"			(* Anytime Heuristic Search *)
+"anytime/continued_focal_search"
+"anytime/continued_wtlist"
+"anytime/continued_reorderable"
+"anytime/restarting_reorderable"
+"anytime/repairing_search"			(* Anytime Repairing Search *)
+"anytime/repairing_reorderable_search"
+"anytime/repairing_focal_search"
+"anytime/restarting_focal_search"
+"anytime/restarting_search"			(* Core of Lama *)
+"anytime/nonparm_astar"                         (* ANA* *)
+"deadline/das_rewrite"
+"deadline/contract_astar"
+"deadline/speedy_first_anytime"
+"deadline/eq_38_tables"
+"deadline/approx_eq_38"
+"deadline/offline_contract_study"
+"deadline/speedy_first_acastar"
+"optimistic/optimistic_framework"		(* Optimistic frame *)
+"optimistic/reorderable_optimistic_framework"   (* Optimistic frame *)
+"anytime/continued_three_queue"
+"anytime/restarting_three_queue"
+"anytime/repairing_three_queue"
+"optimistic/three_queue"
+"optimistic/three_queue_fast"
+"optimistic/ees_lesion3"
+"aepsilon/aeps_m2"
+"aepsilon/focused_search"
+"aepsilon/repairing_focused_search"
+"aepsilon/restarting_focused_search"
+
+(* Specific Searches *)
+"best_first/astar"				(* A* search *)
+"best_first/astar_distance"			(* A* search *)
+"best_first/b"					(* B search *)
+"best_first/bprime"				(* B' search *)
+"best_first/uniform_cost_search"		(* Uniform cost search *)
+"best_first/wted_astar"				(* Weighted A* search *)
+"best_first/double_weighted_astar"
+"best_first/greedy"				(* Greedy search *)
+"best_first/speedy"				(* Greedy search *)
+"best_first/speediest"
+"best_first/wted_speediest"
+"best_first/breadth_first_heuristic"		(* Breadth-first HS *)
+"best_first/breadth_first_search_graph"		(* vanilla breadth first *)
+"best_first/frontier_search"
+"best_first/k_weighted_astar"			(* kwA*)
+"best_first/msc_k_wted_astar"			(* MSC-kwA*)
+"best_first/single_queue_bidirectional"
+"tree_search/depth_first_search"		(* Breadth first search *)
+"tree_search/breadth_first_search"		(* Depth first search *)
+"best_first/dynamically_wted_astar"             (* Original DwA* *)
+"best_first/recursive_best_first"               (* RBFS *)
+"best_first/revised_dwastar"                    (* Revised dwa* *)
+"best_first/greedy_round_robin"
+"best_first/three_queue_probes"
+"best_first/tqs_rewrite"
+"best_first/tqs_lesion"
+"best_first/continued_tqs_rewrite"
+"best_first/repairing_tqs_rewrite"
+"best_first/restarting_tqs_rewrite"
+"iterative/iterative_deepening_search"		(* IDS *)
+"iterative/iterative_deepening_astar"		(* IDA* *)
+"iterative/idastar_transposition"               (* IDA* w/ trans table *)
+"iterative/idastar"
+"iterative/idastar_sspath"
+"iterative/idastar_sspath_cr"
+(*"iterative/idastar_sspath_m2"*)
+"anytime/anytime_astar"				(* Anytime weighted A* *)
+"anytime/full_astar"
+"anytime/arastar"				(* Anytime Repairing A* *)
+"anytime/aras"				        (* ARA* re-impl. *)
+"anytime/restarts_wastar"			(* Restarts weighted A* *)
+"anytime/lama11"
+"anytime/lama11_pss"
+"anytime/aees_pss"
+"anytime/aees_pss_dd"
+"anytime/aees"
+"anytime/aprof"
+"anytime/anytime_dwastar"
+"anytime/restarts_dwastar"
+"anytime/ardwastar"
+"anytime/arrdwastar"
+"anytime/anytime_rdwastar"
+"anytime/restarts_rdwastar"
+"anytime/anytime_astar_wtlist"
+"anytime/anytime_skeptical"
+"anytime/baseline_anytime"
+"anytime/anytime_greedy"
+"anytime/anytime_speedy"
+"alpha/alpha_astar"
+"alpha/restarting_alpha_astar"
+"alpha/repairing_alpha_astar"
+"aepsilon/aepsilon"
+"anytime/awastar.ml"				(* anytime weighted a*)
+"anytime/awwastar.ml"
+"anytime/awastar_h.ml"
+"anytime/awastar_d.ml"
+"anytime/awastar_g.ml"
+"anytime/beam_stack_search.ml"
+"anytime/anytime_aseps"
+"iterative/iterated_window_search.ml"
+"iterative/iterated_window_search_wscaling.ml"
+
+
+"realtime/dtastar_old.ml"                           (* Realtime searches *)
+"realtime/dtas.ml"
+"realtime/idtastar.ml"
+"realtime/idtastar_ideal.ml"
+"realtime/rtastar.ml"
+"realtime/srtastar.ml"
+"realtime/srtastar_old.ml"
+"realtime/lsslrtastar"
+"realtime/astar_lsslrta"
+"realtime/incr"
+(*"realtime/rt_incr"*)
+
+"local/hill_climbing"				(* Hill Climbing Framework *)
+"local/astar_hc"
+"local/hbss_graph"
+
+"optimistic/optimistic_search"			(* Optimistic search *)
+"optimistic/aseps_optimistic"
+"optimistic/aseps_optimistic_search"
+"optimistic/three_queue_search_ss"
+"optimistic/three_queue_search_ss_fast"
+"optimistic/three_queue_search_ss_v2"
+"optimistic/restarting_tqs"
+"optimistic/three_queue_search_rev_v2"
+"optimistic/tqs_g_update"
+"optimistic/three_queue_gupdate"
+"optimistic/three_queue_search_rev"
+"optimistic/three_queue_search_rev_fast"
+"optimistic/dwa_optimistic"
+"optimistic/dyn_wted_optimistic"
+"optimistic/two_queue_framework"
+"optimistic/max_w"
+"aseps_variants/aseps"				(* A* eps, focal on d *)
+"aseps_variants/f_then_h"			(* sorts focal on h *)
+"aseps_variants/f_then_fprime"			(* sorts focal on wA*)
+"aseps_variants/f_then_dwa"			(* sorts focal on dwA*)
+"aseps_variants/f_then_hhat"			(* sorts focal on hhat*)
+"aseps_variants/aseps_sched"
+"tie_breaking/wastar_tiebreaking"
+"tie_breaking/dwastar_tiebreaking"
+"bugsy/bugsy_old"
+"bugsy/bugsy"
+"bugsy/bugsy_simple"
+"best_first/wastar"
+
+"beam/beam"					(* does a beam search *)
+"beam/generic_beam"                             (* generalized beam
+                                                   search approaches *)
+"beam/random_beam"
+
+"beam/wa_hack"
+"beam/bf_beam"
+
+"best_first/mastar"
+"best_first/smastar"
+"beam/windowed_search"
+"beam/windowed_search_dd"
+"beam/beam_stack"
+"beam/fhp_beam"
+"beam/bulb"
+"beam/newbeam"
+"beam/restart_chooser"
+"beam/complete_anytime_beam"
+"beam/double_beam"
+"beam/adaptive_beam"
+"beam/adaptive_bf_beam"
+"beam/hybrid_beam"
+"beam/stochastic_beam_search"
+"beam/laso_br"
+"beam/laso_bst"
+"beam/laso_record"
+"beam/train_br"
+"beam/train_bst"
+"beam/load_laso_weights"
+"beam/austin_beam"
+
+"adaptive/astar_bootstrap"
+"adaptive/greedy_bootstrap"
+"adaptive/bootstrapping"
+"adaptive/single_step"
+"adaptive/norm_values"
+"adaptive/path_based_adaptive"
+"adaptive/restarting_single_step"
+"adaptive/repairing_single_step"
+"adaptive/single_step_cleanup"
+"adaptive/vector_search"
+"adaptive/clamped_vector_search"
+"adaptive/clamped_specified_hhat"
+"adaptive/rev_heuristics"
+"adaptive/vector_aseps"
+"adaptive/vector_optimistic"
+"adaptive/global_h_ss"
+"adaptive/lms_h_ss"
+"adaptive/lms_h"
+"adaptive/lms_hd"
+"adaptive/lms_hd_m2"
+"adaptive/ann_hd"
+"adaptive/batched_lms_hd"  (* commented out to remove reliance on lacaml*)
+"adaptive/do_batched_lms"
+"adaptive/lms_rev_h"
+"adaptive/vector_h_ss"
+"adaptive/offline_vectors"
+"adaptive/simple_mult"
+"adaptive/clamped_searches"
+"adaptive/clamped_searches_rh"
+"adaptive/cleanup_searches"
+"adaptive/cleanup_specified_hhat"
+"adaptive/global_hd_ss"
+"adaptive/global_fd_ss"
+"adaptive/path_fd_ss"
+"adaptive/rev_h_nomemory"
+"adaptive/rev_fd"
+"adaptive/rev_fd_nomemory"
+"adaptive/rev_h_globalavg"
+"adaptive/rev_h_mock_singlestep"
+"adaptive/rev_hd_mock_singlestep"
+"adaptive/rev_clamped_searches"
+"adaptive/dummy_ss"
+"adaptive/tqs"
+"adaptive/tqs_fast"
+"adaptive/tqs_fast_v2"
+"adaptive/tqs_fast_inadmiss"
+"adaptive/tqs_gupdate"
+"adaptive/tqs_rev"
+"adaptive/tqs_rev_fast"
+"adaptive/tqs_specified_hhat"
+"adaptive/anytime_adaptive"
+"adaptive/restarting_adaptive"
+"adaptive/repairing_adaptive"
+"adaptive/restarting_tqs_calls"
+"adaptive/call_ees_l3"
+"adaptive/greedy_adaptive"
+"adaptive/round_robin_adaptive"
+"adaptive/path_cleanup"
+"adaptive/ees_cleanup"
+"adaptive/sach"
+"adaptive/bst_greedy" (* greedy search based on LASO-BST weights*)
+"adaptive/br_greedy" (* greedy search based on LASO-BR weights*)
+"adaptive/br_skeptical" (* skeptical search based on LASO-BR weights*)
+
+(* Incremental Search Algorithms *)
+(* "incremental/dstar_lite"
+   "incremental/lpastar"*)
+
+(* Reverse Cleanup *)
+"reverse_cleanup/reverse_cleanup_search"
+"reverse_cleanup/reverse_cleanup_framework"
+"reverse_cleanup/reverse_cleanup_framework_dups"
+"reverse_cleanup/reverse_ss_searches"
+
+(* Bounded cost *)
+"bounded_cost/speedy_baseline"
+"bounded_cost/greedy_baseline"
+"bounded_cost/astar_baseline"
+"bounded_cost/potential_d"
+"bounded_cost/potential_search"
+"bounded_cost/bounded_potential"
+"bounded_cost/potential_hhat"
+"bounded_cost/bees"
+"bounded_cost/cbees"
+"bounded_cost/effort"
+"bounded_cost/beevs"
+"bounded_cost/beeps"
+"bounded_cost/beeps_dhat"
+"bounded_cost/beeps_velocity"
+"bounded_cost/beeps_hhat"
+"bounded_cost/dpot"
+"bounded_cost/tqs_as_bc"
+
+(* Constant over optimal *)
+"cost_over_opt/tqs_coo"
+"cost_over_opt/aseps_coo"
+"cost_over_opt/fdn"
+
+(* Recording Searches for visualizers *)
+"recording/recording_aseps"
+"recording/recording_clamped"
+"recording/recording_unbounded_ss"
+"recording/recording_astar"
+"recording/recording_uniform"
+"recording/recording_breadth"
+"recording/recording_greedy"
+"recording/recording_speedy"
+"recording/recording_wastar"
+"recording/recording_tqs"
+"recording/recording_tqs_v2"
+"recording/recording_tqs_supplied_hhat"
+"recording/recorders"
+"recording/recording_beam"
+"recording/recording_optimistic"
+"recording/recording_dfs"
+
+"loggers/progress_est"
+"loggers/d_histo"
+"progress_estimate/astar_est"
+"progress_estimate/greedy_est"
+"progress_estimate/greedy_adapt_est"
+"progress_estimate/wted_astar_est"
+"progress_estimate/west_ringbuff"
+"progress_estimate/west_velocity"
+"progress_estimate/wastar_vacilation"
+"progress_estimate/west_pest"
+"progress_estimate/west_percent_velocity"
+"progress_estimate/aest_ringbuff"
+"progress_estimate/aest_histo"
+"progress_estimate/aest_percentage"
+"progress_estimate/aest_fvelocity"
+"progress_estimate/gest_ringbuff"
+"progress_estimate/gest_percent_velocity"
+"progress_estimate/gest_velocity"
+"progress_estimate/ghest_velocity"
+"progress_estimate/gest_vacilation"
+"progress_estimate/gest_histo"
+"progress_estimate/gest_phisto"
+"progress_estimate/wastar_histo"
+"progress_estimate/wastar_phisto"
+"progress_estimate/gest_histo_avg"
+"progress_estimate/ghest_ringbuff"
+"progress_estimate/ghest_vacilation"
+
+"size_estimate/partial_astar"
+"size_estimate/random_trees"
+"size_estimate/knuth_sampling"
+"size_estimate/duplicate_counting"
+"size_estimate/dfmin_vs_growth"
+
+"heuristic_analysis/order"
+"heuristic_analysis/ha"
+
+(* Calling Searches *)
+"call_search/anytime_searches"
+"call_search/iterative_searches"
+"call_search/realtime_searches"
+"call_search/alg_table_nodups"
+"call_search/alg_table_dups"
+"call_search/alg_table_dd"
+"call_search/alg_initializers"
+
+(* Scratch pad for currently working on code *)
+"realtime/online"
+
+Libraries:
+"histogram"
+(*"lacaml"*)
+
+(*EOF*)

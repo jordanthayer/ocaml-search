@@ -1,0 +1,27 @@
+"src/num_by_num": include
+"src/num_by_nom": include
+<src/num_by_nom/*.ml{,i}>: pkg_lacaml
+<src/num_by_num/*.ml{,i}>: pkg_lacaml
+# OASIS_START
+# DO NOT EDIT (digest: a8b55d1daa2cd394f8598a0fe182d075)
+# Library spt
+"src": include
+<src/*.ml{,i}>: pkg_str
+<src/*.ml{,i}>: pkg_lacaml
+<src/*.ml{,i}>: pkg_cairo.lablgtk2
+<src/*.ml{,i}>: pkg_cairo
+# Executable spt-it-out
+<src/spt-it-out/spt_it_out.{native,byte}>: pkg_str
+<src/spt-it-out/spt_it_out.{native,byte}>: pkg_lacaml
+<src/spt-it-out/spt_it_out.{native,byte}>: pkg_cairo.lablgtk2
+<src/spt-it-out/spt_it_out.{native,byte}>: pkg_cairo
+<*.ml{,i}>: pkg_str
+<*.ml{,i}>: pkg_lacaml
+<*.ml{,i}>: pkg_cairo.lablgtk2
+<*.ml{,i}>: pkg_cairo
+<src/spt-it-out/*.ml{,i}>: pkg_str
+<src/spt-it-out/*.ml{,i}>: pkg_lacaml
+<src/spt-it-out/*.ml{,i}>: pkg_cairo.lablgtk2
+<src/spt-it-out/*.ml{,i}>: pkg_cairo
+"src/spt-it-out": include
+# OASIS_STOP

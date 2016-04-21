@@ -1,0 +1,18 @@
+                         Job shop scheduling
+
+This solver finds all possibly conflicts between pairs of operations
+and searches over the space of orderings between pairs.  Uses an STN
+to determine if a set of orderings becomes inconsistent.
+Additionally, the constraint based analysis of Smith and Cheng
+("Slack-Based Heuristics For Constraint Satisfaction Scheduling," AAAI
+, 1993) is used to propagate some constraints among the orderings.
+Additionally, the heuristic used to order the pairs is the bslack2
+heuristic of S&C and the value ordering heuristic is max slack.
+
+There are two implementations of this domain:
+
+1) Job_shop - a very slow implementation where state is copied
+everywhere.
+
+2) Jsp - a much faster (and newer and hopefully easier to read)
+implementation using in-place modification of a single state.

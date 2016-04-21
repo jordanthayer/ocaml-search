@@ -1,0 +1,5 @@
+"test" : include
+"libplayerc_caml.a": use_playerc
+<libplayerc_caml/*.c>: include_playerc
+<playerc.cm{x,}a>: use_playerc_caml
+<playerc/*.cmx>: for-pack(Playerc)

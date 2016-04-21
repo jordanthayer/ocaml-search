@@ -1,0 +1,13 @@
+current algs do not respect the incumbent with passed in
+
+Todo for search code:
+   add logging to searches
+       -- How should iterative searches be logged?  Ethan may have
+          some insight or specific desires about this.
+       -- Above also goes for tree search
+
+   Adaptive searches -
+   	    More / Separate study of timing mechanisms
+
+
+  Pass along hash and equality for all searches

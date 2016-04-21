@@ -1,0 +1,42 @@
+Notes
+-----
+
+
+----------- datafile
+
+not # -> regular columns
+#cols ...
+#val "key" "value"
+#start data file format 4
+#end data file format 4
+#altcols "name" ...
+#altrow "name" ...
+
+
+----------- experimental db
+
+edb-path root-directory ( KEY=VALUE )*
+
+   returns path to new file (or error if file exists)
+   will invalidate any cache files that match key
+
+   do auto-renaming using something like `unspecified'
+   use a marker for files to ignore: IGNORE as prefix?
+     also ignore CACHE
+
+edb-cache root-directory ( KEY=VALUE )* name
+
+   returns path to file (created if necessary) that corresponds to
+   cache for `name' which is a function of all the matches to the keys
+
+   have separate file for each name
+
+   like match, but don't descend into anything more specific
+
+edb-match root-directory ( KEY=VALUE )*
+
+   returns paths (or attribute groups), line by line, flushing as it
+     goes (for maximum blocking I/O)
+
+
+# EOF

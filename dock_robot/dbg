@@ -1,0 +1,1218 @@
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 6543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=no cargo
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 44 crane: 0 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 6543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=no cargo
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 44 crane: 0 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 6543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=no cargo
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 44 crane: 0 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 6543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=no cargo
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 44 crane: 0 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=no cargo
+Cranes:
+	0 cargo=6
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 38 crane: 2 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=no cargo
+Cranes:
+	0 cargo=6
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 38 crane: 2 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=no cargo
+Cranes:
+	0 cargo=6
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 38 crane: 2 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=no cargo
+Cranes:
+	0 cargo=6
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 38 crane: 2 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=no cargo
+Cranes:
+	0 cargo=6
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 38 crane: 2 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=6
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 38 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,4	7,4
+Piles:
+	0: 543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=6
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 38 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,3	7,4
+Piles:
+	0: 543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=6
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 38 crane: 0 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,2	7,4
+Piles:
+	0: 543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=6
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 38 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,1	7,4
+Piles:
+	0: 543210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=6
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 38 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 43210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=6
+Cranes:
+	0 cargo=5
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 32 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,4	7,4
+Piles:
+	0: 43210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=6
+Cranes:
+	0 cargo=5
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 32 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,3	7,4
+Piles:
+	0: 43210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=6
+Cranes:
+	0 cargo=5
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 32 crane: 2 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,2	7,4
+Piles:
+	0: 43210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=6
+Cranes:
+	0 cargo=5
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 32 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,1	7,4
+Piles:
+	0: 43210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=6
+Cranes:
+	0 cargo=5
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 32 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 43210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=5
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 32 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,4	6,0	7,4
+Piles:
+	0: 43210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=5
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 32 crane: 0 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,3	6,0	7,4
+Piles:
+	0: 43210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=5
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 32 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,2	6,0	7,4
+Piles:
+	0: 43210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=5
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 32 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,1	6,0	7,4
+Piles:
+	0: 43210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=5
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 32 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 3210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=5
+Cranes:
+	0 cargo=4
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 26 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,4	6,0	7,4
+Piles:
+	0: 3210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=5
+Cranes:
+	0 cargo=4
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 26 crane: 2 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,3	6,0	7,4
+Piles:
+	0: 3210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=5
+Cranes:
+	0 cargo=4
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 26 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,2	6,0	7,4
+Piles:
+	0: 3210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=5
+Cranes:
+	0 cargo=4
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 26 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,1	6,0	7,4
+Piles:
+	0: 3210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=5
+Cranes:
+	0 cargo=4
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 26 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 3210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=4
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 26 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,4	5,0	6,0	7,4
+Piles:
+	0: 3210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=4
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 26 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,3	5,0	6,0	7,4
+Piles:
+	0: 3210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=4
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 26 crane: 0 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,2	5,0	6,0	7,4
+Piles:
+	0: 3210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=4
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 26 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,1	5,0	6,0	7,4
+Piles:
+	0: 3210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=4
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 26 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=4
+Cranes:
+	0 cargo=3
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 20 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,4	5,0	6,0	7,4
+Piles:
+	0: 210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=4
+Cranes:
+	0 cargo=3
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 20 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,3	5,0	6,0	7,4
+Piles:
+	0: 210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=4
+Cranes:
+	0 cargo=3
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 20 crane: 2 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,2	5,0	6,0	7,4
+Piles:
+	0: 210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=4
+Cranes:
+	0 cargo=3
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 20 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,1	5,0	6,0	7,4
+Piles:
+	0: 210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=4
+Cranes:
+	0 cargo=3
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 20 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=3
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 20 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,4	4,0	5,0	6,0	7,4
+Piles:
+	0: 210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=3
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 20 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,3	4,0	5,0	6,0	7,4
+Piles:
+	0: 210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=3
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 20 crane: 0 robot: 0
+Locations:
+	0,0	1,0	2,0	3,2	4,0	5,0	6,0	7,4
+Piles:
+	0: 210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=3
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 20 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,1	4,0	5,0	6,0	7,4
+Piles:
+	0: 210	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=3
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 20 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 10	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=3
+Cranes:
+	0 cargo=2
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 14 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,4	4,0	5,0	6,0	7,4
+Piles:
+	0: 10	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=3
+Cranes:
+	0 cargo=2
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 14 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,3	4,0	5,0	6,0	7,4
+Piles:
+	0: 10	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=3
+Cranes:
+	0 cargo=2
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 14 crane: 2 robot: 0
+Locations:
+	0,0	1,0	2,0	3,2	4,0	5,0	6,0	7,4
+Piles:
+	0: 10	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=3
+Cranes:
+	0 cargo=2
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 14 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,1	4,0	5,0	6,0	7,4
+Piles:
+	0: 10	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=3
+Cranes:
+	0 cargo=2
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 14 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 10	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=2
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 14 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,4	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 10	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=2
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 14 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,3	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 10	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=2
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 14 crane: 0 robot: 0
+Locations:
+	0,0	1,0	2,2	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 10	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=2
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 14 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,1	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 10	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=2
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 14 crane: 0 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 0	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=2
+Cranes:
+	0 cargo=1
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 8 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,4	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 0	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=2
+Cranes:
+	0 cargo=1
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 8 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,3	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 0	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=2
+Cranes:
+	0 cargo=1
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 8 crane: 2 robot: 0
+Locations:
+	0,0	1,0	2,2	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 0	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=2
+Cranes:
+	0 cargo=1
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 8 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,1	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 0	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=2
+Cranes:
+	0 cargo=1
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 8 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 0	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=1
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 8 crane: 0 robot: 1
+Locations:
+	0,0	1,4	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 0	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=1
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 8 crane: 0 robot: 1
+Locations:
+	0,0	1,3	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 0	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=1
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 8 crane: 0 robot: 1
+Locations:
+	0,0	1,2	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 0	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=1
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 8 crane: 0 robot: 1
+Locations:
+	0,0	1,1	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 0	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=1
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 8 crane: 0 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=1
+Cranes:
+	0 cargo=0
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 2 robot: 1
+Locations:
+	0,0	1,4	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=1
+Cranes:
+	0 cargo=0
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 2 robot: 1
+Locations:
+	0,0	1,3	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=1
+Cranes:
+	0 cargo=0
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 2 robot: 1
+Locations:
+	0,0	1,2	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=1
+Cranes:
+	0 cargo=0
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 2 robot: 1
+Locations:
+	0,0	1,1	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=1
+Cranes:
+	0 cargo=0
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 2 robot: 0
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=0, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 0 robot: 1
+Locations:
+	0,4	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 0 robot: 0
+Locations:
+	0,3	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 0 robot: 1
+Locations:
+	0,2	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 0 robot: 1
+Locations:
+	0,1	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 0 robot: 1
+Locations:
+	0,4	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 0 robot: 0
+Locations:
+	0,3	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=3, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 0 robot: 1
+Locations:
+	0,2	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=2, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 0 robot: 1
+Locations:
+	0,1	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=1, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 4 crane: 0 robot: 1
+Locations:
+	0,4	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 
+Robots:
+	0 location=4, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=7
+
+deepest: 0 crane: 2 robot: 0
+Locations:
+	0,4	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 7
+Robots:
+	0 location=4, cargo=no cargo
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=0
+
+deepest: 4 crane: 0 robot: 0
+Locations:
+	0,3	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 
+Robots:
+	0 location=3, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=7
+
+deepest: 0 crane: 2 robot: 1
+Locations:
+	0,2	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 
+Robots:
+	0 location=2, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=7
+
+deepest: 0 crane: 2 robot: 1
+Locations:
+	0,1	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 
+Robots:
+	0 location=1, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=7
+
+deepest: 0 crane: 2 robot: 1
+Locations:
+	0,0	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 
+Robots:
+	0 location=0, cargo=0
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=7
+
+deepest: 0 crane: 2 robot: 1
+Locations:
+	0,4	1,0	2,0	3,0	4,0	5,0	6,0	7,4
+Piles:
+	0: 	1: 	2: 	3: 	4: 
+Robots:
+	0 location=4, cargo=7
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 0 crane: 0 robot: 1
+Locations:
+	0,4	1,0	2,0	3,0	4,0	5,0	6,0	7,3
+Piles:
+	0: 	1: 	2: 	3: 	4: 
+Robots:
+	0 location=3, cargo=7
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+deepest: 0 crane: 0 robot: 0
+Locations:
+	0,4	1,0	2,0	3,0	4,0	5,0	6,0	7,3
+Piles:
+	0: 	1: 	2: 	3: 	4: 
+Robots:
+	0 location=3, cargo=7
+Cranes:
+	0 cargo=no cargo
+	1 cargo=no cargo
+	2 cargo=no cargo
+	3 cargo=no cargo
+	4 cargo=no cargo
+
+Fatal error: exception Failure("d was 0.000000")

@@ -1,0 +1,5 @@
+To build:
+ocamlbuild playerc.otarget
+
+To install:
+sudo sh install.sh

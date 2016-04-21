@@ -1,0 +1,58 @@
+# Copied from simple.world
+
+include "pioneer.inc"
+include "map.inc"
+include "sick.inc"
+
+# Time to pause (in GUI mode) or quit (in headless mode (-g)) the simulation
+quit_time 3600 # 1 hour of simulated time
+
+paused 1
+
+resolution 0.02
+
+window
+(
+        #
+        # The stage window.
+        #
+        size [ 635.000 666.000 ] # In pixels
+        scale 4.5 # Pixels per meter
+        center [ -0.019  -0.282 ]
+        rotate [ 0  0 ]
+        show_data 1              # 1=on 0=off
+)
+
+floorplan
+(
+        #
+        # A map of Kingsbury Hall, University of New Hampshire.
+        #
+        name "kingsbury_secondfloor"
+        bitmap "kingsbury_secondfloor.png"
+        size [140 128.6 0.8] # size of the Kingsbury map in meters.
+)
+
+pioneer2dx
+(
+        #
+        # The robot to simulate.
+        #
+
+        # Can refer to the robot by this name
+        name "r0"
+        pose [ -57 6 0 45 ]
+
+        sicklaser
+        (
+                # Uncomment this line to run a laser noise generator
+                ctrl "lasernoise"
+        )
+
+        # The robot wanders about the world.
+        ctrl "wander"
+
+        # Report error-free position in world coordinates
+        localization "gps"
+        localization_origin [ 0 0 0 0 ]
+)

@@ -1,0 +1,28 @@
+Systems:
+"wrutils"
+"structs"
+"bounded_depth"
+"user_paths"
+"blfs"
+
+
+Files:
+"two_partition"
+"two_partition_ckk"
+"two_partition_ckk_list"
+"two_partition_ckk_inplace"
+"two_partition_greedy"
+"two_partition_greedy_inplace"
+"two_partition_instance"
+"two_partition_algs"
+"two_partition_runs"
+
+Libraries:
+
+Result: "two_partition" native "two_partition_main"
+Result: "two_partition_debug" bytedebug "two_partition_main"
+Result: "two_partition_prof" nativeprof "two_partition_main"
+Result: "two_partition_sample" native "two_partition_sample"
+Result: "two_partition_dump" native "two_partition_dump"
+
+(* EOF *)

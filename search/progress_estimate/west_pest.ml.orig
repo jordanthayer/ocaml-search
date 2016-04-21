@@ -1,0 +1,40 @@
+(**
+
+    @author jtd7
+    @since 2012-03-31
+*)
+
+open Wted_astar_est
+
+
+let make_pest_hat root_d rb_size =
+  let rb = Ring_buffer.init rb_size in
+  let insert = Ring_buffer.insert rb in
+  let update_and_return i node openlist children =
+    let exp = float i.Limit.expanded in
+    let divisor =  max epsilon (1. -. (min 1. (!glob_d_err /. exp))) in
+    let initial_d = root_d /. divisor in
+    let this_d = node.fp.d /. divisor in
+      insert (this_d /. initial_d);
+      let est = 1. -. (Ring_buffer.get_mean rb) in
+	exp /. est, est in
+    update_and_return
+
+
+let dups_pest_hat sface args =
+  let module SI = Search_interface in
+  let wt = Search_args.get_float "Wted_astar.dups" args 0 in
+  let rb_size = Search_args.get_int "Wted_astar.dups" args 1 in
+  let key = wrap sface.SI.key
+  and hash = sface.SI.hash
+  and equals = sface.SI.equals
+  and goal = wrap sface.SI.goal_p
+  and hd = sface.Search_interface.hd in
+  let i = (Limit.make Limit.Nothing sface.SI.halt_on better_p
+	     (Limit.make_default_logger (fun n -> n.fp.g)
+		(fun n -> n.ints.depth))) in
+  let initial = make_initial sface.SI.initial hd wt
+  and expand = make_expand i sface.SI.domain_expand hd wt in
+  let est = make_pest_hat initial.fp.d rb_size in
+    Limit.unwrap_sol6 unwrap_sol
+      (search ~est i key hash equals goal expand initial)

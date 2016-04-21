@@ -1,0 +1,14 @@
+Systems:
+"wrutils"
+
+Files:
+"motion_prim"
+"motion_prim_vis"
+
+Libraries:
+"unix"
+"graphics"
+"threads"
+
+Result: "tracer" native "motion_prim_tracer" using threads
+Result: "visualizer" native "mp_visualizer"

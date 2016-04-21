@@ -1,0 +1,24 @@
+   Notes on the manufacturing domain of Ruml and Fromherz, "On-line
+    Planning and Scheduling in a High-speed Manufacturing Domain",
+  Proceedings of the ICAPS-04 Workshop on Integrating Planning into
+                          Scheduling, 2004.
+
+                             Ethan Burns
+
+
+2010-06-14
+----------
+* Machines connected by transports with known time to convey material
+* Machines have a set number of actions with known durations
+* Multiple input sources for raw material
+* Multiple outputs for raw material
+* (2011-03-14, the following is not true in the implemented version
+  where durations are fixed) Actions have an upper and lower bound on
+  their durations
+* Locations (machines) and resources are not equivalent (a machine can
+  work on multiple material at once)
+* Each 'job' has an initial location, a goal location, background
+  knowledge and a batch number that it is associated with (2011-03-14,
+  no batches in implemented version).  The background knowledge seems
+  to be predicates about the layouts of the machines or something
+  (from the example: CanCutShape(Machine-2, Cylinder-Type-2)).

@@ -1,0 +1,88 @@
+(* data structures *)
+
+Systems:
+"wrutils"
+
+Files:
+(* priority queues *)
+"skew_heap"
+"pq"
+"dq"
+"dpq"
+"upq"
+
+
+(* specialized priority queues *)
+"lq"
+"mmh"
+"picky_queue"
+"ht_heap"
+"hybrid_beam_queue"
+"bucket_heap"
+
+
+(* doubly-linked lists *)
+"dbl"
+"dblq"
+"cache"
+(* balanced tree *)
+"doset"
+"geq"
+"double_geq"
+"safe_geq"
+(* other sets *)
+"uset"
+"coatcheck"
+"backedht"
+(* graphs *)
+"graph"
+"dag"
+"uf"
+"duf"
+"dufi"
+"dlist"
+"htable"
+"bitset"
+"hist"
+"llrbt"
+"garray"
+"sliding_window"
+"zlist"
+"queue_set"
+"simple_temp_net"
+"d_stn"
+"sparse_array"
+"intset"
+"skiplist"
+"trie"
+"ternary_tree"
+"rbtree"
+"kdtree"
+"packed_ints"
+"flow_net"
+"old_stn"
+"lazy_vec"
+"int_tree"
+"p_stn"
+"flheap"
+
+(*miscellaneous*)
+"bp_array"
+"dynarray"
+"ring_buffer"
+
+(* sketches of possible new modules *)
+(* "rset" *)
+(* "igraph" *)
+
+Libraries:
+
+(* Result: "foo" native *)
+Result: "test_stn" native "test_stn"
+Result: "test_stn_debug" bytedebug "test_stn"
+Result: "test_stn_prof" nativeprof "test_stn"
+Result: "benchmark_sl" native "benchmark_sl"
+Result: "benchmark_sl_prof" nativeprof "benchmark_sl"
+
+
+(* EOF *)

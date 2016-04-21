@@ -1,0 +1,22 @@
+(* system file *)
+
+
+Systems:
+"wrutils"
+"rdb"
+"search"
+
+Files:
+"drn_instance"
+"non_dynamic"
+"dynamic"
+"drn_interface"
+"drn_inadmiss"
+
+Libraries:
+
+Result: "dyn_robot" native "drn_main"
+Result: "test2" native "drn_test2_main"
+
+
+(* EOF *)

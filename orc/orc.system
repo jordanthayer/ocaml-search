@@ -1,0 +1,22 @@
+(* Orc Bombing System File *)
+Systems:
+"wrutils"
+"search"
+"wrmath"
+
+Files:
+"orc"
+"orc_gen"
+"orc_input"
+"orc_interfaces"
+
+
+Libraries:
+
+(*
+
+
+*)
+
+Result: "orc" native "orc_main"
+Result: "orc_debug" bytedebug "orc_main"

@@ -1,0 +1,24 @@
+(* Vacuum Domain System File *)
+Systems:
+"search"
+"grid"  (* for mazes. *)
+"rdb"   (* for datafile.ml *)
+
+Files:
+"vacuum"
+"vacuum_instance"
+"vacuum_maze"
+"reverse_vacuum"
+"vacuum_inadmiss"
+"vacuum_interfaces"
+
+Libraries:
+
+Result: "vacuum" native "vacuum_main"
+Result: "vacuum_prof" nativeprof "vacuum_main"
+Result: "vacuum_debug" bytedebug "vacuum_main"
+Result: "vacuum_maze" native "vacuum_maze_main"
+Result: "vacuum_maze_debug" bytedebug "vacuum_maze_main"
+Result: "vacuum_maze_prof" nativeprof "vacuum_maze_main"
+
+(* EOF *)

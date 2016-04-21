@@ -1,0 +1,27 @@
+(* system file *)
+
+Systems:
+"wrutils"
+"search"
+"user_paths"
+"wrmath"
+
+Files:
+"explicit_graph"
+"random_graph"
+"random_tree"
+"pearl_uniform_btree"
+"rst_tree"
+"stu_tree"
+"silvia_tree"
+"uniform_tree"
+"normal_tree"
+"fixed_depth/fd_rand_tree"
+
+Libraries:
+
+Result: "synth" native "synth_main"
+Result: "uniform_tree" native "uniform_tree_main"
+Result: "uniform_tree_debug" nativedebug "uniform_tree_main"
+Result: "uniform_tree_prof" nativeprof "uniform_tree_main"
+Result: "normal_tree" native "normal_tree_main"

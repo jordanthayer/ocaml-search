@@ -1,0 +1,313 @@
+#cols  "sol cost"	"sol length"	"nodes expanded"	"nodes generated"	"duplicates encountered"	"raw cpu time"
+inf	0	0	0	0	0.000000
+#altcols  "d_histo"	"bucket"	"count"
+#altcols  "progress_estimate"	"expansion"	"depth"	"estimated_remaining"	"estimated_percent"
+#altrow  "progress_estimate"	0	0	39.000000	0.000000
+53.000000	53	2608955	5155005	374673	63.790000
+#altrow  "progress_estimate"	2394845	26	230798.830741	0.912098
+#altrow  "progress_estimate"	2397004	24	231013.429036	0.912096
+#altrow  "progress_estimate"	2455283	27	236709.986405	0.912069
+#altrow  "progress_estimate"	2465062	16	237665.399678	0.912065
+#altrow  "progress_estimate"	2475854	18	238707.971022	0.912064
+#altrow  "progress_estimate"	2479524	36	239064.256625	0.912063
+#altrow  "progress_estimate"	2484334	28	239538.045966	0.912060
+#altrow  "progress_estimate"	2485318	23	239631.118187	0.912060
+#altrow  "progress_estimate"	2486235	23	239719.118874	0.912060
+#altrow  "progress_estimate"	2486984	18	239795.006673	0.912059
+#altrow  "progress_estimate"	2488056	30	239901.536282	0.912058
+#altrow  "progress_estimate"	2490698	25	240166.836462	0.912055
+#altrow  "progress_estimate"	2491786	23	240279.144924	0.912052
+#altrow  "progress_estimate"	2495675	29	240661.622005	0.912050
+#altrow  "progress_estimate"	2496905	28	240775.880839	0.912051
+#altrow  "progress_estimate"	2504388	32	241488.656202	0.912054
+#altrow  "progress_estimate"	2510555	30	242114.298649	0.912044
+#altrow  "progress_estimate"	2511624	19	242213.599096	0.912045
+#altrow  "progress_estimate"	2513039	24	242346.339152	0.912046
+#altrow  "progress_estimate"	2514363	17	242479.219460	0.912045
+#altrow  "progress_estimate"	2515456	27	242588.213019	0.912043
+#altrow  "progress_estimate"	2517843	24	242825.358690	0.912041
+#altrow  "progress_estimate"	2519294	27	242980.702007	0.912036
+#altrow  "progress_estimate"	2521307	29	243188.400558	0.912032
+#altrow  "progress_estimate"	2523211	19	243372.777381	0.912031
+#altrow  "progress_estimate"	2523430	23	243391.513860	0.912032
+#altrow  "progress_estimate"	2523701	27	243415.506154	0.912033
+#altrow  "progress_estimate"	2523975	22	243443.653062	0.912032
+#altrow  "progress_estimate"	2525665	31	243616.492552	0.912029
+#altrow  "progress_estimate"	2528904	28	243937.710528	0.912026
+#altrow  "progress_estimate"	2528946	26	243941.797108	0.912026
+#altrow  "progress_estimate"	2528984	27	243946.571407	0.912026
+#altrow  "progress_estimate"	2529652	25	244015.486219	0.912024
+#altrow  "progress_estimate"	2530528	24	244108.760769	0.912021
+#altrow  "progress_estimate"	2531035	33	244152.924266	0.912023
+#altrow  "progress_estimate"	2531247	30	244175.882841	0.912022
+#altrow  "progress_estimate"	2531627	30	244215.178018	0.912021
+#altrow  "progress_estimate"	2534265	24	244469.828476	0.912021
+#altrow  "progress_estimate"	2535003	33	244544.593701	0.912020
+#altrow  "progress_estimate"	2537785	31	244820.972607	0.912017
+#altrow  "progress_estimate"	2538604	30	244903.495780	0.912016
+#altrow  "progress_estimate"	2538701	19	244914.222490	0.912016
+#altrow  "progress_estimate"	2539274	26	244963.629340	0.912018
+#altrow  "progress_estimate"	2539329	23	244969.330587	0.912018
+#altrow  "progress_estimate"	2541130	18	245144.650875	0.912017
+#altrow  "progress_estimate"	2541394	27	245169.873412	0.912017
+#altrow  "progress_estimate"	2541430	16	245170.220703	0.912018
+#altrow  "progress_estimate"	2542174	23	245238.374565	0.912019
+#altrow  "progress_estimate"	2542303	29	245253.183478	0.912019
+#altrow  "progress_estimate"	2543189	36	245343.360601	0.912017
+#altrow  "progress_estimate"	2543911	27	245412.676194	0.912017
+#altrow  "progress_estimate"	2546104	30	245634.511029	0.912014
+#altrow  "progress_estimate"	2547350	23	245754.093559	0.912014
+#altrow  "progress_estimate"	2547520	24	245770.221200	0.912014
+#altrow  "progress_estimate"	2547614	28	245779.642159	0.912014
+#altrow  "progress_estimate"	2547942	31	245815.540048	0.912013
+#altrow  "progress_estimate"	2548347	35	245856.726849	0.912012
+#altrow  "progress_estimate"	2549735	24	245983.544834	0.912014
+#altrow  "progress_estimate"	2550163	14	246031.188183	0.912012
+#altrow  "progress_estimate"	2551567	32	246183.066145	0.912007
+#altrow  "progress_estimate"	2551797	19	246206.320123	0.912006
+#altrow  "progress_estimate"	2551855	34	246212.198459	0.912006
+#altrow  "progress_estimate"	2553018	23	246324.467644	0.912006
+#altrow  "progress_estimate"	2553335	23	246357.803246	0.912005
+#altrow  "progress_estimate"	2553721	26	246394.477607	0.912006
+#altrow  "progress_estimate"	2553991	25	246420.587752	0.912006
+#altrow  "progress_estimate"	2555073	29	246529.834948	0.912004
+#altrow  "progress_estimate"	2556453	23	246669.994570	0.912002
+#altrow  "progress_estimate"	2556962	19	246723.187860	0.912000
+#altrow  "progress_estimate"	2557494	27	246774.281487	0.912000
+#altrow  "progress_estimate"	2558114	16	246822.628453	0.912004
+#altrow  "progress_estimate"	2558247	24	246830.605119	0.912006
+#altrow  "progress_estimate"	2558691	26	246869.642298	0.912007
+#altrow  "progress_estimate"	2558997	33	246901.474750	0.912006
+#altrow  "progress_estimate"	2559128	23	246915.094472	0.912006
+#altrow  "progress_estimate"	2560074	29	247009.572972	0.912005
+#altrow  "progress_estimate"	2560478	20	247051.307410	0.912004
+#altrow  "progress_estimate"	2560832	26	247087.342740	0.912003
+#altrow  "progress_estimate"	2561216	26	247128.936803	0.912002
+#altrow  "progress_estimate"	2561591	28	247162.220431	0.912003
+#altrow  "progress_estimate"	2562319	26	247235.736739	0.912002
+#altrow  "progress_estimate"	2563404	33	247336.852847	0.912003
+#altrow  "progress_estimate"	2563687	36	247362.468281	0.912004
+#altrow  "progress_estimate"	2564816	28	247467.211109	0.912005
+#altrow  "progress_estimate"	2565128	32	247497.282287	0.912005
+#altrow  "progress_estimate"	2565554	16	247529.471313	0.912008
+#altrow  "progress_estimate"	2565581	23	247531.347885	0.912008
+#altrow  "progress_estimate"	2566374	33	247608.767407	0.912008
+#altrow  "progress_estimate"	2566696	33	247640.399184	0.912008
+#altrow  "progress_estimate"	2567128	28	247684.304560	0.912007
+#altrow  "progress_estimate"	2568156	22	247785.595109	0.912006
+#altrow  "progress_estimate"	2568380	34	247809.970819	0.912005
+#altrow  "progress_estimate"	2568648	24	247837.148980	0.912005
+#altrow  "progress_estimate"	2569766	23	247960.750973	0.912000
+#altrow  "progress_estimate"	2570075	34	247993.669323	0.911999
+#altrow  "progress_estimate"	2570139	35	247999.358203	0.911999
+#altrow  "progress_estimate"	2571973	14	248185.212510	0.911996
+#altrow  "progress_estimate"	2572495	25	248235.534970	0.911996
+#altrow  "progress_estimate"	2573209	22	248304.106761	0.911996
+#altrow  "progress_estimate"	2573367	26	248319.723309	0.911996
+#altrow  "progress_estimate"	2573995	27	248384.129482	0.911995
+#altrow  "progress_estimate"	2574465	19	248427.163514	0.911996
+#altrow  "progress_estimate"	2575123	25	248491.239361	0.911995
+#altrow  "progress_estimate"	2576055	27	248581.302498	0.911995
+#altrow  "progress_estimate"	2576551	22	248627.771337	0.911996
+#altrow  "progress_estimate"	2577394	26	248705.119699	0.911997
+#altrow  "progress_estimate"	2577415	33	248707.919139	0.911997
+#altrow  "progress_estimate"	2577937	26	248753.758872	0.911998
+#altrow  "progress_estimate"	2578157	29	248774.255666	0.911998
+#altrow  "progress_estimate"	2578243	23	248781.747800	0.911999
+#altrow  "progress_estimate"	2579051	29	248866.613145	0.911997
+#altrow  "progress_estimate"	2579197	29	248883.813885	0.911996
+#altrow  "progress_estimate"	2580661	22	249033.476282	0.911993
+#altrow  "progress_estimate"	2580802	23	249048.721807	0.911992
+#altrow  "progress_estimate"	2580863	26	249054.788698	0.911992
+#altrow  "progress_estimate"	2580920	34	249060.897352	0.911992
+#altrow  "progress_estimate"	2581011	19	249069.253500	0.911992
+#altrow  "progress_estimate"	2581015	31	249069.701974	0.911992
+#altrow  "progress_estimate"	2581171	25	249086.188644	0.911992
+#altrow  "progress_estimate"	2581368	27	249105.276044	0.911992
+#altrow  "progress_estimate"	2582049	19	249171.681607	0.911991
+#altrow  "progress_estimate"	2582305	34	249194.366143	0.911992
+#altrow  "progress_estimate"	2582833	25	249245.365346	0.911992
+#altrow  "progress_estimate"	2582950	18	249258.157326	0.911992
+#altrow  "progress_estimate"	2583156	27	249279.056001	0.911991
+#altrow  "progress_estimate"	2583598	31	249324.999386	0.911990
+#altrow  "progress_estimate"	2583683	34	249333.800603	0.911990
+#altrow  "progress_estimate"	2583926	27	249357.157337	0.911990
+#altrow  "progress_estimate"	2584181	36	249378.942412	0.911991
+#altrow  "progress_estimate"	2584278	22	249388.920697	0.911991
+#altrow  "progress_estimate"	2584383	29	249400.119709	0.911990
+#altrow  "progress_estimate"	2584433	30	249404.683741	0.911990
+#altrow  "progress_estimate"	2584602	25	249418.390779	0.911991
+#altrow  "progress_estimate"	2584605	29	249418.802151	0.911991
+#altrow  "progress_estimate"	2584868	22	249441.098883	0.911992
+#altrow  "progress_estimate"	2585297	22	249480.475578	0.911993
+#altrow  "progress_estimate"	2585708	20	249520.944984	0.911993
+#altrow  "progress_estimate"	2585918	33	249542.337998	0.911992
+#altrow  "progress_estimate"	2586625	26	249615.929237	0.911991
+#altrow  "progress_estimate"	2586728	23	249622.738943	0.911992
+#altrow  "progress_estimate"	2586947	29	249648.959525	0.911990
+#altrow  "progress_estimate"	2586973	20	249652.319605	0.911990
+#altrow  "progress_estimate"	2587423	18	249696.918112	0.911989
+#altrow  "progress_estimate"	2587978	28	249754.777784	0.911988
+#altrow  "progress_estimate"	2588027	33	249759.205647	0.911988
+#altrow  "progress_estimate"	2588228	29	249780.772626	0.911987
+#altrow  "progress_estimate"	2588786	26	249844.990936	0.911984
+#altrow  "progress_estimate"	2588918	29	249856.130061	0.911984
+#altrow  "progress_estimate"	2589065	24	249872.264992	0.911984
+#altrow  "progress_estimate"	2589547	20	249911.943031	0.911986
+#altrow  "progress_estimate"	2590271	25	249977.532981	0.911987
+#altrow  "progress_estimate"	2590368	27	249988.635750	0.911987
+#altrow  "progress_estimate"	2590617	28	250013.569047	0.911987
+#altrow  "progress_estimate"	2591025	22	250058.445102	0.911985
+#altrow  "progress_estimate"	2591249	25	250082.722083	0.911984
+#altrow  "progress_estimate"	2591596	31	250121.780495	0.911982
+#altrow  "progress_estimate"	2591745	36	250135.423343	0.911982
+#altrow  "progress_estimate"	2591863	23	250147.528972	0.911982
+#altrow  "progress_estimate"	2591925	27	250155.177428	0.911982
+#altrow  "progress_estimate"	2592372	30	250201.978851	0.911980
+#altrow  "progress_estimate"	2592668	30	250235.876027	0.911979
+#altrow  "progress_estimate"	2593235	25	250294.791398	0.911977
+#altrow  "progress_estimate"	2593547	25	250325.803403	0.911977
+#altrow  "progress_estimate"	2593690	29	250341.400801	0.911977
+#altrow  "progress_estimate"	2594085	26	250383.005538	0.911975
+#altrow  "progress_estimate"	2594543	27	250424.882082	0.911976
+#altrow  "progress_estimate"	2594754	28	250448.446938	0.911975
+#altrow  "progress_estimate"	2594781	22	250451.559354	0.911975
+#altrow  "progress_estimate"	2594824	21	250457.084461	0.911975
+#altrow  "progress_estimate"	2594856	22	250460.194450	0.911975
+#altrow  "progress_estimate"	2594891	22	250464.023218	0.911974
+#altrow  "progress_estimate"	2595041	27	250476.615608	0.911975
+#altrow  "progress_estimate"	2595426	27	250518.618361	0.911973
+#altrow  "progress_estimate"	2595451	24	250521.944013	0.911973
+#altrow  "progress_estimate"	2595608	29	250537.284705	0.911973
+#altrow  "progress_estimate"	2595687	21	250546.616745	0.911973
+#altrow  "progress_estimate"	2596152	26	250599.382195	0.911970
+#altrow  "progress_estimate"	2596411	29	250626.864678	0.911969
+#altrow  "progress_estimate"	2596989	33	250688.392233	0.911967
+#altrow  "progress_estimate"	2597048	32	250692.824035	0.911968
+#altrow  "progress_estimate"	2597107	32	250699.185932	0.911968
+#altrow  "progress_estimate"	2597334	23	250719.695419	0.911968
+#altrow  "progress_estimate"	2597443	29	250732.545078	0.911967
+#altrow  "progress_estimate"	2598530	24	250839.232210	0.911967
+#altrow  "progress_estimate"	2598538	21	250839.944626	0.911967
+#altrow  "progress_estimate"	2598658	21	250851.867338	0.911967
+#altrow  "progress_estimate"	2598788	23	250863.479344	0.911967
+#altrow  "progress_estimate"	2598814	29	250866.378145	0.911967
+#altrow  "progress_estimate"	2598922	30	250876.767893	0.911967
+#altrow  "progress_estimate"	2599322	27	250913.237050	0.911968
+#altrow  "progress_estimate"	2599336	23	250914.532826	0.911968
+#altrow  "progress_estimate"	2600066	26	250987.140821	0.911967
+#altrow  "progress_estimate"	2600228	17	251003.774545	0.911967
+#altrow  "progress_estimate"	2600344	18	251013.410421	0.911967
+#altrow  "progress_estimate"	2600424	39	251019.485793	0.911968
+#altrow  "progress_estimate"	2601033	21	251069.272389	0.911970
+#altrow  "progress_estimate"	2601035	13	251069.181494	0.911971
+#altrow  "progress_estimate"	2601074	27	251073.762643	0.911970
+#altrow  "progress_estimate"	2601223	23	251086.576607	0.911971
+#altrow  "progress_estimate"	2601280	24	251092.594744	0.911971
+#altrow  "progress_estimate"	2601581	40	251121.005303	0.911971
+#altrow  "progress_estimate"	2601583	29	251120.939430	0.911971
+#altrow  "progress_estimate"	2601952	23	251154.431268	0.911972
+#altrow  "progress_estimate"	2602169	34	251174.810782	0.911972
+#altrow  "progress_estimate"	2602212	27	251180.205532	0.911971
+#altrow  "progress_estimate"	2602309	28	251186.460981	0.911972
+#altrow  "progress_estimate"	2602550	26	251209.448691	0.911972
+#altrow  "progress_estimate"	2602684	23	251223.877952	0.911972
+#altrow  "progress_estimate"	2602922	22	251244.462489	0.911973
+#altrow  "progress_estimate"	2602958	18	251248.281278	0.911973
+#altrow  "progress_estimate"	2602962	19	251248.459611	0.911973
+#altrow  "progress_estimate"	2603141	26	251268.274789	0.911972
+#altrow  "progress_estimate"	2603281	29	251281.843276	0.911972
+#altrow  "progress_estimate"	2603473	23	251299.157999	0.911972
+#altrow  "progress_estimate"	2603542	24	251303.764668	0.911973
+#altrow  "progress_estimate"	2603661	29	251317.246051	0.911972
+#altrow  "progress_estimate"	2603691	25	251319.495078	0.911972
+#altrow  "progress_estimate"	2603792	23	251332.117797	0.911972
+#altrow  "progress_estimate"	2603895	31	251341.562295	0.911972
+#altrow  "progress_estimate"	2603931	23	251344.745573	0.911972
+#altrow  "progress_estimate"	2604025	33	251353.169733	0.911972
+#altrow  "progress_estimate"	2604048	31	251356.186997	0.911972
+#altrow  "progress_estimate"	2604219	25	251373.410194	0.911972
+#altrow  "progress_estimate"	2604542	21	251406.859763	0.911971
+#altrow  "progress_estimate"	2604576	31	251411.137537	0.911970
+#altrow  "progress_estimate"	2604791	29	251433.402971	0.911970
+#altrow  "progress_estimate"	2604993	26	251454.818924	0.911969
+#altrow  "progress_estimate"	2605015	27	251457.257202	0.911969
+#altrow  "progress_estimate"	2605258	24	251485.948140	0.911968
+#altrow  "progress_estimate"	2605383	26	251499.996849	0.911967
+#altrow  "progress_estimate"	2605449	22	251504.299181	0.911968
+#altrow  "progress_estimate"	2605698	24	251531.596400	0.911967
+#altrow  "progress_estimate"	2606390	29	251591.900031	0.911969
+#altrow  "progress_estimate"	2606418	23	251594.664793	0.911969
+#altrow  "progress_estimate"	2606453	23	251598.018386	0.911969
+#altrow  "progress_estimate"	2606500	33	251603.832942	0.911968
+#altrow  "progress_estimate"	2606699	32	251625.296616	0.911968
+#altrow  "progress_estimate"	2606840	17	251640.162341	0.911967
+#altrow  "progress_estimate"	2607297	26	251685.972605	0.911967
+#altrow  "progress_estimate"	2607516	34	251706.809765	0.911967
+#altrow  "progress_estimate"	2607598	23	251715.981705	0.911966
+#altrow  "progress_estimate"	2607627	25	251717.926892	0.911967
+#altrow  "progress_estimate"	2607667	32	251720.632199	0.911967
+#altrow  "progress_estimate"	2607859	29	251737.776821	0.911967
+#altrow  "progress_estimate"	2607869	21	251738.691415	0.911967
+#altrow  "progress_estimate"	2608043	36	251758.080634	0.911967
+#altrow  "progress_estimate"	2608238	24	251778.595540	0.911966
+#altrow  "progress_estimate"	2608295	23	251783.942846	0.911966
+#altrow  "progress_estimate"	2608496	23	251806.341138	0.911965
+#altrow  "progress_estimate"	2608779	22	251836.069216	0.911964
+#altrow  "progress_estimate"	2608955	53	0.000000	1.000000
+53.000000	53	2608955	5155005	374673	63.810000
+#altrow  "d_histo"	0	0
+#altrow  "d_histo"	1	1
+#altrow  "d_histo"	2	1
+#altrow  "d_histo"	3	2
+#altrow  "d_histo"	4	9
+#altrow  "d_histo"	5	11
+#altrow  "d_histo"	6	34
+#altrow  "d_histo"	7	80
+#altrow  "d_histo"	8	182
+#altrow  "d_histo"	9	264
+#altrow  "d_histo"	10	639
+#altrow  "d_histo"	11	1047
+#altrow  "d_histo"	12	2310
+#altrow  "d_histo"	13	3173
+#altrow  "d_histo"	14	7137
+#altrow  "d_histo"	15	9141
+#altrow  "d_histo"	16	18794
+#altrow  "d_histo"	17	22055
+#altrow  "d_histo"	18	40359
+#altrow  "d_histo"	19	44710
+#altrow  "d_histo"	20	73256
+#altrow  "d_histo"	21	76880
+#altrow  "d_histo"	22	115092
+#altrow  "d_histo"	23	117663
+#altrow  "d_histo"	24	160189
+#altrow  "d_histo"	25	158756
+#altrow  "d_histo"	26	197157
+#altrow  "d_histo"	27	189863
+#altrow  "d_histo"	28	213019
+#altrow  "d_histo"	29	197594
+#altrow  "d_histo"	30	199326
+#altrow  "d_histo"	31	175944
+#altrow  "d_histo"	32	156299
+#altrow  "d_histo"	33	128773
+#altrow  "d_histo"	34	100869
+#altrow  "d_histo"	35	74577
+#altrow  "d_histo"	36	50933
+#altrow  "d_histo"	37	33129
+#altrow  "d_histo"	38	19991
+#altrow  "d_histo"	39	10695
+#altrow  "d_histo"	40	5294
+#altrow  "d_histo"	41	2378
+#altrow  "d_histo"	42	927
+#altrow  "d_histo"	43	305
+#altrow  "d_histo"	44	81
+#altrow  "d_histo"	45	13
+#altrow  "d_histo"	46	3
+#pair  "found solution"	"yes"
+#pair  "final sol cost"	"53."
+#pair  "final sol length"	"53"
+#pair  "total raw cpu time"	"63.81"
+#pair  "peak virtual mem usage kb"	"1589784"
+#pair  "number of duplicates found"	"374673"
+#pair  "total nodes expanded"	"2608955"
+#pair  "total nodes generated"	"5155005"

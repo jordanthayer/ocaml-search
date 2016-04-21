@@ -1,0 +1,20 @@
+(* system file *)
+
+
+Systems:
+"wrutils"
+"rdb"
+"search"
+
+Files:
+"msa_instance"
+"msa_dp"
+"msa"
+
+Libraries:
+
+Result: "msa" native "msa_main"
+Result: "make_instances" native "msa_gen_main"
+
+
+(* EOF *)

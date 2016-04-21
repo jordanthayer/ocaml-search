@@ -1,0 +1,44 @@
+(* system file *)
+
+Systems:
+"structs"
+
+Files:
+"wrutils"
+"math"
+"verb"
+"dset"
+"eqvclass"
+"wrlist"
+"wrchar"
+"wrstr"
+"wrstrm" using "camlp4o"
+"fixedq"
+"logfn"
+"wrio"
+"wrfname"
+"wrformat"
+"wrlexing"
+"wrarray"
+"wrht"
+"wrsys"
+"udp"
+"park_miller"
+"perfect_array_hasher"
+"fn"
+"array_hasher"
+"memtest"
+"external_memory"
+"float_ref"
+"machine_usage"
+"assert"
+
+Libraries:
+"unix"
+"str"
+"nums"
+
+(* Result: "foo" native *)
+Result: "machine_usage" native
+
+(* EOF *)

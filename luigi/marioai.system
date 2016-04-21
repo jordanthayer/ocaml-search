@@ -1,0 +1,16 @@
+Systems:
+(* Try to use only a few systems so that this code is very self contained. *)
+"structs"
+
+
+Files:
+"object"
+"mario"
+"mob"
+"level"
+"connection"
+"client"
+
+Libraries:
+
+Result: "main" bytedebug "main"

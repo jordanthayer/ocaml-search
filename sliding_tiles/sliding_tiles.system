@@ -1,0 +1,33 @@
+Systems:
+"search"
+"pdb"
+"wrutils"
+
+
+Files:
+"sliding_tiles_inst"
+"sliding_tiles"
+"sliding_heuristics"
+"macro_sliding_tiles"
+"sliding_tiles_pdb"
+"sliding_unit_pdb"
+"sliding_pdb_interfaces"
+"sliding_unit_pdb_interfaces"
+"sliding_tiles_interfaces"
+"sliding_inadmiss_interfaces"
+"sliding_tiles_maker"
+"glued_interfaces"
+"glued_functions"
+"gen_cost_function"
+"bootstrapping_runs"
+
+CLibraries:
+
+Result: "sliding-tiles" native "sliding_tiles_main"
+Result: "sliding-tiles_prof" nativeprof "sliding_tiles_main"
+Result: "stdebug" nativedebug "sliding_tiles_main"
+Result: "make_pdb" native "sliding_tiles_pdb_main"
+Result: "tilesboot" native "sliding_bootstrap"
+Result: "tilesbootdebug" nativedebug "sliding_bootstrap"
+Result: "tilesbootbyte" bytedebug "sliding_bootstrap"
+Result: "bootstrap_greedy" native "bootstrap_greedy"

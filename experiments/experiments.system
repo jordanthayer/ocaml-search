@@ -1,0 +1,71 @@
+(* system file *)
+
+Systems:
+"wrutils"
+"search"
+"user_paths"
+
+(* domains *)
+"grid"
+"drn"
+"tsp"
+(*"tplan_reg"*)
+"msa"
+(*"o_planner"*)
+"vacuum"
+"synthetic_graph"
+"rucksack"
+"pancake"
+"vis_nav"
+"hanoi"
+
+Files:
+"experiments"
+"meta_run"
+"notify"
+"get_truth_data"
+"chris_runs"
+"java_runs"
+"java_runs2"
+
+(* Domains *)
+(*"santa_runs"*)
+"grid_runs"
+"testgrid"
+"grid_instance_generation"
+"drn_runs"
+"robot_instance_maker"
+"tiles_instance_maker"
+"tiles_runs"
+"pancake_runs"
+"tsp_runs"
+"tpl_runs_reg"
+"msa_runs"
+"vacuum_runs"
+"synth_runs"
+"rucksack_runs"
+"vis_nav_runs"
+(*"anticip_run"*)
+"uniform_runs"
+"normal_runs"
+"sliding_tiles_runs"
+"tanker_runs"
+"hanoi_runs"
+"dock_run"
+"chess_runs"
+"topspin_runs"
+(*"orc_runs"*)
+"make_planprobs"
+"run_planner"
+
+(* utilities *)
+"realtime_learning"
+
+(* Top Level Things *)
+"vis_algs"
+
+Libraries:
+
+Result: "mkgrids" native "mkgrids"
+
+(* EOF *)

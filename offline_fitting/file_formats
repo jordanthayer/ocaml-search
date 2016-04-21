@@ -1,0 +1,61 @@
+A brief description of the file formats used to do visualizations and
+offline fitting (They're identical)
+
+Truth File:
+      The truth file is a list of entries (each line in the file is an entry).
+      Each entry consists of
+      The Key | True Heuristic Values | Admissible Heuristic Values
+
+      each category is delimited by a pipe ( '|' ).
+
+      The key must uniquely identify the problem state, and should be
+      the key used by the domain (Grid.key, Tiles.key, etc etc).
+
+      True heuristics and admissible heuristics are comma delimited
+      lists of floats.  h is the first entry, d is the second entry.
+      After that it is unspecified, but there also isn't any code to
+      access those values.  True heuristics are the true values,
+      admissible heuristics are the values calculated using a relaxation.
+
+Expansion File:
+      The expansion file records the run of an algorithm.
+      Conceptually, it is a list of expansions performed over the
+      course of a search.  Each line is of the form
+
+      key | g | depth | cost | children
+
+      where children may or may not be empty.  The key is as always
+      the domain key.  G and depth are the cost of arriving at the
+      node and its depth in the search tree respectively.  Cost is the
+      cost function on which the search is ordered.  g(n) + h(n) in
+      the case of A*, g(n) + w * h(n) for weighted A* and so on.
+      Children is a space delimited sequence of keys representing the
+      children.
+
+      THESE CHILD KEYS MUST BE PRESENT IN THE FILE.  IF THEY ARE NOT
+      IN THE FILE, THE FILE _WILL_NOT_LOAD.
+
+      I record children at time of generation and time of expansion.
+      Currently the code only keeps one copy of a node around (the one
+      which was expanded last), but future editions could maintain a
+      list of all occurances of the node.
+
+Structure File:
+      The structure file represents the layout of a data structure at
+      the time of a corresponding expansion.  Each line represents a
+      different time step.  Lines are of the form
+
+      index keys
+
+      Where index is the time step at which we're recording (generally
+      the ith expanison) and keys is an ordered list of the nodes
+      present in the structure at that time step.  Everything is space
+      delimited. Again, the keys should line up with the domain keys.
+
+
+Parsing Keys:
+
+	Key parsing is all done by run_reader.ml.  A few key parsing
+	functions are defined there.  Grid keys, the kind you're most
+	likely to use look like "(x,y)"  and are read with the scanf
+	command.  Feel free to add key readers as domains are added.

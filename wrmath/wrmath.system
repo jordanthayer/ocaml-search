@@ -1,0 +1,29 @@
+(* system file *)
+
+Systems:
+"wrutils"
+"structs"
+
+Files:
+"interp"
+"functions"
+"vector"
+"matrix"
+"probability"
+"stats"
+"wrrandom"
+"ord_opt"
+"num_opt"
+"dist_opt"
+"normal"
+"sample"
+"matrix2d"
+"delaunay"
+"digraph"
+
+Libraries:
+
+(* Result: "foo" native *)
+
+
+(* EOF *)

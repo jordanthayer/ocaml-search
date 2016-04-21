@@ -1,0 +1,9 @@
+libplayerc_caml/verb.o
+libplayerc_caml/common.o
+libplayerc_caml/device_stubs.o
+libplayerc_caml/client_stubs.o
+libplayerc_caml/position2d_stubs.o
+libplayerc_caml/laser_stubs.o
+libplayerc_caml/map_stubs.o
+libplayerc_caml/graphics2d_stubs.o
+libplayerc_caml/simulation_stubs.o

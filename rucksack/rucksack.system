@@ -1,0 +1,23 @@
+(** A Collected Set of knapsack / rucksack problems *)
+
+Systems:
+"wrutils"
+"search"
+"bounded_depth"
+"blfs"
+
+
+Files:
+"zero_one_graph"
+"zero_one_tree"
+"item_set_list"
+"item_set_array"
+"knapsack_bounded_depth"
+"knapsack_bounded_depth_algs"
+
+Libraries:
+
+Result: "rucksack" native "rucksack_main"
+Result: "knapsack_bounded_depth" native "knapsack_bounded_depth_main"
+
+(* EOF *)

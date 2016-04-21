@@ -1,0 +1,33 @@
+(* system file *)
+
+
+Systems:
+"wrutils"
+"rdb"
+"search"
+
+
+Files:
+"tpl_domain"
+"parse_pddl.mly"
+"lex.mll"
+"tpl_ground"
+"tpl_rtpg_c"
+"tpl_h2"
+"tpl_cg"
+"tpl_regression"
+
+
+Libraries:
+
+Result: "tplan_reg" native "tpl_main_reg"
+
+Result: "tplan_reg_bycode" bytedebug "tpl_main_reg"
+
+(***
+Result: "tplan_pro" native "main_pro" "search_pro" "runs_pro" "progression"
+Result: "tplan_reg_debug" bytedebug "main_reg" "tpg_p" "search_reg" "runs_reg" "regression"
+***)
+
+
+(* EOF *)

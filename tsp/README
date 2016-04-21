@@ -1,0 +1,105 @@
+===================================
+CODE FOR TRAVELING SALESMAN PROBLEM
+===================================
+
+Ephrat Bitton, summer 2006
+
+TODO
+------
+time limits and upper bounds to A* and friends
+update TSP MST code, rerun results
+
+
+
+tsp.ml
+------
+Contains structure for TSP domain. Supports two different h-heuristics: the
+minimum spanning tree and the Pearl and Kim heuristic (i.e. the maximum of
+either the sum of the minima across the rows of the distance matrix or the
+sum of the minima across the columns of the distance matrix). Uses the
+number of cities remaining as the estimated computational effort to go.
+
+TODO: complete code to verify that the tour is valid
+
+
+algs.ml
+------
+Provides support in the TSP domain for the following algorithms:
+
+  - A*
+  - Greedy
+  - Speedy
+  - Weighted A*
+  - Dynamically Weighted A*
+  - Anytime A*
+  - A* Epsilon
+  - Anytime A* Epsilon
+  - ARA*
+  - Bugsy (but not working very well -> soaks up way too much memory way
+    too fast)
+
+
+instances.ml
+------------
+Provides functionality for generating and reading instances:
+
+  - Reads symmetric and assymetric TSPLib instances
+      * Symmetric instances should either be in lower diagonal form,
+	coordinate form, or explicitly defined in a complete distance matrix
+      * The distance matrix for assymetric instances should be given
+        explicitly.
+  - Generates random Pearl & Kim hard problems (where edge weights are
+    randomly generated between 0.75 and 1.25)
+  - Generates random problems of a specified size in the unit square
+  - Contains code to test the minimum spanning tree code in TSP on a
+    specified instance
+
+
+main.ml
+-------
+Contains the caller to the native code executable & associated code
+
+
+runs.ml
+-------
+Code for setting up and running experiments.
+
+  - Callers for generating random instances
+  - Can do batches on 'weighted' algorithms:
+      * (Anytime) Weighted A*
+      * (Anytime) A* Epsilon
+      * (Anytime) Dynamically Weighted A*
+  - Batches for ARA* algorithm
+  - Batches for Bugsy
+
+
+results.ml
+----------
+Data analysis code
+
+  - Scatter plots (raw data for each instance)
+  - "Combined" plots -> pretty sure these are useless
+  - Plots of time per node vs. epsilon or weight
+  - Hull code :)
+  - Individual plots of all weights for each algorithm
+  - Plots to compare 2 algorithms (Pearl & Kim style)
+      * Averaged
+      * By weight -> probably more valuable than averaged
+
+
+tsp.systm
+---------
+Standard system file
+
+
+../data/
+-----
+  - Instances
+      * 40 unit square
+      * 40 Pearl & Kim hard
+  - Runs
+
+
+plots/
+------
+Contains all plots generated for TSP domain

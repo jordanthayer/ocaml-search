@@ -1,0 +1,25 @@
+Systems:
+"wrutils"
+"rdb"
+"user_paths"
+"bounded_depth"
+"blfs"
+
+
+Files:
+"job_shop_instance"
+"job_shop"
+"job_shop_algs"
+"job_shop_runs"
+"job_shop_sample"
+"jsp"
+
+Libraries:
+
+Result: "job_shop" native "job_shop_main"
+Result: "job_shop_debug" bytedebug "job_shop_main"
+Result: "job_shop_prof" nativeprof "job_shop_main"
+Result: "sample" native "job_shop_sample_main"
+Result: "sample_debug" bytedebug "job_shop_sample_main"
+
+(*EOF*)

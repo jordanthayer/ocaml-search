@@ -1,0 +1,20 @@
+Real sokoban is substantially different from nethack sokoban (solved
+blocks are not gone, generating floors).
+
+The standard extension name for the sokoban files I'm using is xsb
+
+I ignore everything but the board
+
+When outputting a solution (assuming we do that), they use the
+characters u,d,l,r,U,D,L,R.  Capitals mean you are pushing a crate
+during that move.
+
+Detecting non-solvable states and pruning them is going to be
+absolutely key
+
+Everything needs to be set up so that an arbitrary walk / push ration
+can be set up.
+
+
+The nethack boards have more boulders than goal positions, so the goal
+test will have to be modified to account for that.

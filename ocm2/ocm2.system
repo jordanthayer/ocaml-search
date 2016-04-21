@@ -1,0 +1,24 @@
+Systems:
+
+Files:
+"types"
+"file"
+"result"
+"system"
+"flags"
+"verb"
+"lex.mll"
+"parse.mly"
+"fname"
+"conf"
+"deps"
+"object"
+"build"
+"graph"
+
+Libraries:
+"unix"
+
+Result: "ocm2" bytedebug "main"
+Result: "ocm2_native" native "main"
+Result: "ocm2_prof" nativeprof "main"

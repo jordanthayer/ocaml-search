@@ -1,0 +1,25 @@
+Readme for the experiments code -
+  Really, just a couple of notes on how to keep things organized, how
+  to cut down on code repetition and clutter.
+
+
+Adding Algorithms:
+------------------
+
+	There should be an .ml file which matches a directory in
+	search for each directory in search.  If there isn't, add it.
+
+	This ML file contains calls to each of the search algorithms
+	described in that folder within the search system.
+	Alphabetical or chronological order is fine, but we should
+	decide on one and go with it.
+
+	If a very common call isn't provided by your code for some
+	reason (like you don't have a version which handles
+	duplicates) include it according to the naming scheme and have
+	it fail with an appropriate message.
+
+
+
+Adding Domains:
+---------------

@@ -1,0 +1,27 @@
+(* system file *)
+
+
+Systems:
+"wrutils"
+"bounded_depth"
+"blfs"
+"rdb"
+"ps_plot"
+
+Files:
+"csp"
+"csp_tree"
+"csp_tree_algs"
+"csp_instances"
+"do_runs"
+"binary_csp"
+"latin_squares"
+
+Libraries:
+
+Result: "csp_solver" native "main"
+Result: "csp_solverdb" bytedebug "main"
+Result: "make_binary" native "maker_main"
+
+
+(* EOF *)

@@ -1,0 +1,21 @@
+(* system file *)
+
+Systems:
+"search"
+"wrutils"
+"rdb"
+"yapp"
+
+Files:
+"vis_nav_instance"
+"vis_nav_solvable"
+"vis_nav_heuristics"
+"vis_nav_interfaces"
+
+Libraries:
+
+Result: "vis_nav" native "vis_nav_main"
+Result: "vndebug" nativedebug "vis_nav_main"
+Result: "vis_nav_debug" bytedebug "vis_nav_main"
+
+(* EOF *)

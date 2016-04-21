@@ -1,0 +1,26 @@
+(* system file *)
+
+Systems:
+"wrmath"
+
+Files:
+"ann"
+"offline_lms"
+"lms"
+"nb"
+"em"
+"xvalidate"
+"nonparam_regression"
+
+Libraries:
+"bigarray"
+"lacaml"
+
+CLibraries:
+"gfortran"
+
+
+(* Result: "foo" native *)
+
+
+(* EOF *)

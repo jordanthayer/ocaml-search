@@ -1,0 +1,18 @@
+(* system file *)
+
+Systems:
+"search"
+"wrutils"
+"rdb"
+
+Files:
+"sokoban_instance"
+"soko_solvable"
+"soko_heuristics"
+"soko_interfaces"
+
+Libraries:
+
+Result: "sokoban" native "sokoban_main"
+
+(* EOF *)

@@ -1,0 +1,33 @@
+Path drawing
+
+Controllable timing on the redraws
+
+Proper redrawing during an interruption
+
+need to lower the printout and the scale
+
+scale showing the meanings of the colors displayed somewhere?
+
+Need to be able to report area consumed by an object to other objects
+to make drawing a lot less magical
+
+how will I handle queues which don't yet exist (optimized optimistic
+  search) Two options?  Either 1) we implement a new search
+  specifically for recording purposes or 2) we alter the way structs
+  are recorded so that we know what search step they came into
+  existence during.  Both suck, but one must happen.
+
+Ask about getting GTK setup so that I can spawn multiple windows
+ or can graphics do that for me?  That'd be nice.
+
+Tool around with scaling
+
+Multiqueue overlays are still odd.  Order has a large and undesired
+  effect.  Maybe do them up as tuples where the second member is
+  order, or n-ples where the other members specify head highlighting
+  and draw sequence?
+
+ Highlight for the head of each queue
+
+ Selecting which queues are overlayed on the main image
+    default being to overlay all the images

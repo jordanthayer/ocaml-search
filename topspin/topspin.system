@@ -1,0 +1,28 @@
+(* TopSpin Domain System File *)
+Systems:
+"wrutils"
+"search"
+
+
+Files:
+"topspin"
+"topspin_heuristics"
+"topspin_interfaces"
+"topspin_io"
+"topspin_maker"
+
+Libraries:
+
+
+Result: "topspin" native "topspin_main"
+Result: "topspin_prof" nativeprof "topspin_main"
+Result: "topspin_debug" bytedebug "topspin_main"
+
+(*
+Result: "hanoi_debug" bytedebug "hanoi_main"
+Result: "hanoi_prof" nativeprof "hanoi_main"
+Result: "hanoi_pdb" native "make_pdb_main"
+Result: "hanoi_pdb_debug" bytedebug "make_pdb_main"
+*)
+
+(* EOF *)

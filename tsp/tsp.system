@@ -1,0 +1,29 @@
+(* system file *)
+
+Systems:
+"wrutils"
+"structs"
+"rdb"
+"search"
+"bounded_depth"
+"blfs"
+
+Files:
+"tsp"
+"tsp_instances"
+"tsp_bounded_depth"
+"tsp_bounded_depth_algs"
+"tsp_inadmiss"
+
+Libraries:
+
+Result: "tsp" native "tsp_main"
+Result: "tsp_debug" bytedebug "tsp_main"
+Result: "tsp_bounded_depth" native "tsp_bounded_depth_main"
+Result: "tsp_bounded_depth_debug" bytedebug "tsp_bounded_depth_main"
+
+(* gprof ... > profile.out *)
+Result: "tspp" nativeprof "tsp_main"
+
+
+(* EOF *)

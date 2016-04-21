@@ -1,0 +1,7 @@
+(let* ((pts0 ((0 1) (1 -8) (2 1)))
+       (pts1 ("label" (5 5) (4 4) (3 5)))
+       (scatter-err (scatter-errbar-dataset :cluster ("another label" pts0)
+					    :cluster pts1))
+       (plot0 (num-by-num-plot :legend (legend-location :lower-right)
+			       :dataset scatter-err)))
+  (display plot0))

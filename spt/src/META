@@ -1,0 +1,10 @@
+# OASIS_START
+# DO NOT EDIT (digest: 80dbeb5c5a3a9a739256670b276ba5c9)
+version = "0.5"
+description = "A Simple Plotting Tool for OCaml programs"
+requires = "cairo cairo lablgtk2 lacaml str"
+archive(byte) = "spt.cma"
+archive(native) = "spt.cmxa"
+exists_if = "spt.cma"
+# OASIS_STOP
+

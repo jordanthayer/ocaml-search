@@ -1,0 +1,16 @@
+                        OCaml histogram module
+                        ----------------------
+
+This implements a simple histogram structure.  The majority of the
+structure is implemented in C and there are bindings for OCaml.
+
+
+
+            What if I update OCaml in the group directory?
+            ----------------------------------------------
+
+Well, you probably should rebuild this model and re-install it in the
+proper place.  To do this, edit the makefile and change the OCAML_DIR
+variable to point to the latest OCaml install directory.  Then
+
+$ make clean all install

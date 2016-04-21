@@ -1,0 +1,16 @@
+(* system file *)
+
+Systems:
+"search"
+"wrutils"
+"rdb"
+
+Files:
+"rubiks"
+
+Libraries:
+
+Result: "rubiks_solver" native "rubiks_main"
+
+
+(* EOF *)

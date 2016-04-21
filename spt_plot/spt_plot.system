@@ -1,0 +1,53 @@
+Systems:
+"rdb"
+"user_paths"
+"spt"
+"learning"
+"offline_fitting"
+
+Files:
+"dataset_macros"
+"dataset_to_spt"
+"load_dataset"
+"normalize_dataset"
+
+(* Ethan's scripts *)
+"scripts/eaburns/plot_size_estimates"
+"scripts/eaburns/plot_idastar_model"
+"scripts/eaburns/plot_parallel"
+"scripts/eaburns/plot_tiles"
+"scripts/eaburns/plot_antic"
+"scripts/eaburns/plot_blfs"
+"scripts/eaburns/plot_anytime"
+"scripts/eaburns/plot_grid"
+"scripts/eaburns/plot_bugsy"
+
+(* Its'a me, Jordan! *)
+"scripts/jtd7/jtd7_helpers"
+"scripts/jtd7/plot_by_weight"
+"scripts/jtd7/bc_plots"
+"scripts/jtd7/anytime_comparisons"
+"scripts/jtd7/beam_greedy_comparisons"
+"scripts/jtd7/scaling"
+"scripts/jtd7/boxes"
+"scripts/jtd7/one_offs"
+"scripts/jtd7/offline_plots"
+"scripts/jtd7/line_diff"
+"scripts/jtd7/plot_planning"
+"scripts/jtd7/progress_plots"
+"scripts/jtd7/anytime_planning"
+"scripts/jtd7/rrt_bias_plot"
+
+(* Chris *)
+"scripts/chris/heat"
+(*"scripts/chris/heat"*)
+(*"scripts/chris/cplot"*)
+
+Libraries:
+"cairo"
+"lablgtk2"
+"histogram"
+"threads"
+
+Result: "test" bytedebug "scripts/eaburns/plot_idastar_model"
+(* EOF *)

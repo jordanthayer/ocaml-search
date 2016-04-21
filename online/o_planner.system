@@ -1,0 +1,36 @@
+(* system file *)
+
+Dotfiles: "z:/.ocmrc-windows"
+
+Systems:
+"wrutils"
+"search"
+"wrthreads"
+
+Files:
+"domain"
+"parse_pddl_o.mly"
+"lex_pddl_o.mll"
+"message.ml"
+"ground"
+"rtpg_c"
+"apsp"
+"cg"
+"apsp"
+"args"
+"interactive" using threads
+"search_o"
+"progression"
+"pop"
+"stn"
+"o_utils"
+"time"
+
+Libraries:
+"unix"
+"threads"
+
+Result: "online_planner" native "oplan_main"
+
+
+(* EOF *)

@@ -1,0 +1,6 @@
+(* OASIS_START *)
+(* DO NOT EDIT (digest: e8e7e0b726937bb694bed7d507bdf269) *)
+Authors of spt
+Ethan Burns
+Jordan Thayer and the UNH AI group
+(* OASIS_STOP *)

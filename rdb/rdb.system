@@ -1,0 +1,23 @@
+(* system file *)
+
+Systems:
+"wrutils"
+"structs" (* dpq in data.ml *)
+"wrmath" (* Vector.multiply_by in data.ml*)
+"user_paths"
+
+Files:
+"rdb"
+"datafile"
+"data"
+"dataset"
+"dataset_utils"
+"dataset_loaders"
+"grouped_analysis"
+
+Libraries:
+"str"
+
+(* Result: "foo" native *)
+Result: "rdb_get_path" native "rdb_get_path"
+(* EOF *)

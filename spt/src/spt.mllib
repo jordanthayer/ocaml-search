@@ -1,0 +1,22 @@
+# OASIS_START
+# DO NOT EDIT (digest: d943ca2fdc873461b0eaa7596607da6a)
+Drawing
+Factories
+Geometry
+Legend
+Length
+Num_by_nom
+Num_by_num
+Plot_sheet
+Verbosity
+Spt
+Boxplot
+Errbar
+Numeric_axis
+Spt_cairo
+Spt_gtk
+Statistics
+Tree_vis
+Num_by_nom_dataset
+Num_by_num_dataset
+# OASIS_STOP

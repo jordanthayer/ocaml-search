@@ -1,0 +1,179 @@
+(**
+
+    @author jtd7
+    @since 2010-12-28
+
+   A repository of all the non-pdb heuristics in sliding tiles
+   maybe just admissible ones actually?
+*)
+
+open Sliding_tiles_inst
+open Sliding_tiles
+
+module Manhattan_distance = struct
+
+  let table tile_cost inst =
+    (** [table move_cost inst ] makes a table for quick single-tile
+	Manhattan distance lookups. *)
+    let goal = inst.goal in
+    let ncols = inst.ncols in
+    let nelms = inst.nelms in
+      Wrarray.init_matrix nelms nelms
+	(fun tile loc ->
+	   let loc' = tile_goal_location goal tile in
+	   let row, col= row_and_col ncols loc in
+	   let row', col' = row_and_col ncols loc' in
+	   let c = tile_cost inst tile in
+	   let dist = (abs (row' - row)) + (abs (col' - col)) in
+	     c *. (float dist))
+
+
+  let from_scratch inst mt get =
+    (** [from_scratch inst mt get] makes a function that computes the
+	Manhattan distance for a state using the Manhattan distance
+	table [mt].  Note that the differing cost functions are taken
+	into account by the Manhattan distance table. *)
+    let nelms = inst.nelms in
+    let rec cost_sum sum get contents loc =
+      if loc < nelms
+      then begin
+	let tile = get contents loc in
+	  if tile = blank_tile
+	  then cost_sum sum get contents (loc + 1) (* don't count the blank. *)
+	  else cost_sum (mt.(tile).(loc) +. sum) get contents (loc + 1)
+      end else sum
+    in (fun contents -> cost_sum 0. get contents 0)
+
+
+  let make_update inst mt parent new_blank tile =
+    (** [make_update inst mt parent new_blank] returns an
+	Manhattan distance which is computed incrementally based on
+	the Manhattan distance of a parent state. *)
+    let old_blank = parent.blank in
+      mt.(tile).(old_blank) -. mt.(tile).(new_blank)
+
+
+  let make_incremental_h inst mt parent blank tile =
+    (** [make_incremental_h inst mt parent blank tile] makes a
+	heuristic (parent -> blank -> tile) that works incrementally
+	given the parent heuristic value. *)
+    let delta = make_update inst mt parent blank tile in
+      parent.h +. delta
+
+
+  let make_incremental_d inst mt parent blank tile =
+    (** [incremental_d inst mt parent blank tile] makes a distance
+	estimator (parent -> blank -> tile) that works incrementally
+	given the parent distance value.  [update_d] is created using
+	the [make_update] function. *)
+    let delta = make_update inst mt parent blank tile in
+    let d' = parent.d + (truncate delta) in
+      assert (d' >= 0);
+      d'
+
+end
+
+module Misplaced_tiles = struct
+
+  let table tile_cost inst =
+    (** [table move_cost inst ] makes a table for quick single-tile
+	Manhattan distance lookups. *)
+    let goal = inst.goal in
+    let ncols = inst.ncols in
+    let nelms = inst.nelms in
+      Wrarray.init_matrix nelms nelms
+	(fun tile loc ->
+	   let loc' = tile_goal_location goal tile in
+	   let row, col= row_and_col ncols loc in
+	   let row', col' = row_and_col ncols loc' in
+	   let c = tile_cost inst tile in
+	   let dist = if row' = row && col' = col then 0 else 1 in
+	     c *. (float dist))
+
+
+  let from_scratch tile_cost inst get =
+    (** [from_scratch inst mt get] makes a function that computes the
+	misplaced tiles for a state.
+	Note that the differing cost functions are taken
+	into account by the Manhattan distance table. *)
+    let nelms = inst.nelms
+    and goal = inst.goal
+    and cfun = tile_cost inst in
+    let info = Packed_ints.info nelms in
+      (fun contents ->
+	 Packed_ints.make_fold_lefti info nelms
+	   (fun accum index ele ->
+	      if (get goal index) <> ele
+	      then accum +. cfun ele
+	      else accum) 0. contents)
+
+
+  let make_update inst mt parent new_blank tile =
+    (** [make_update inst mt parent new_blank] returns an
+	misplaced tile which is computed incrementally based on
+	the misplaced tile of a parent state. *)
+    let old_blank = parent.blank in
+      mt.(tile).(old_blank) -. mt.(tile).(new_blank)
+
+
+  let make_incremental_h inst mt parent blank tile =
+    (** [make_incremental_h inst mt parent blank tile] makes a
+	heuristic (parent -> blank -> tile) that works incrementally
+	given the parent heuristic value. *)
+    let delta = make_update inst mt parent blank tile in
+      parent.h +. delta
+
+
+  let make_incremental_d inst mt parent blank tile =
+    (** [incremental_d inst mt parent blank tile] makes a distance
+	estimator (parent -> blank -> tile) that works incrementally
+	given the parent distance value.  [update_d] is created using
+	the [make_update] function. *)
+    let delta = make_update inst mt parent blank tile in
+    let d' = parent.d + (truncate delta) in
+      assert (d' >= 0);
+      d'
+end
+
+
+module Linear_conflicts = struct
+
+  let in_range start_row end_row tile =
+    tile >= start_row && tile <= end_row
+
+  let from_scratch tile_cost inst =
+    let ncols = inst.ncols
+    and nrows = inst.nrows
+    and info = Packed_ints.info inst.nelms
+    and cfun = tile_cost inst in
+    let end_row = nrows - 1 in
+    let base_get = Packed_ints.make_get info in
+    let conflict_cost = ref 0. in
+      (fun contents ->
+	 conflict_cost := 0.;
+	 let get = base_get contents in
+	   for row = 0 to (end_row)
+	   do
+	     (let start_index = ncols * row
+	      and end_index = (ncols * (row + 1)) - 1 in
+	      let in_row = in_range start_index end_index in
+		for tile_j = start_index to end_index
+		do
+		  (let tj = get tile_j in
+		     if (in_row tj)
+		     then for tile_k = (tile_j + 1) to end_index
+		     do
+		       (let tk = get tile_k in
+			  if (in_row tk) && (tj > tk)
+			  then conflict_cost := (!conflict_cost +.
+						   (Math.fmax (cfun tj)
+						      (cfun tk))))
+		     done)
+		done)
+	   done;
+	   !conflict_cost)
+
+end
+
+
+(* EOF *)

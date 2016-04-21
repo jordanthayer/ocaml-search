@@ -1,0 +1,12 @@
+* Generate documentation
+
+* Generate 'packages'
+
+* Files being dependent on an Extension
+   Currently, a file won't re-build if it uses a parser which is
+   updated
+
+* Detect circular dependencies
+
+* BUG: --clean doesn't remove _ocm dirs from subdirectories that are
+   only specified on Results files (and not the main Files list).

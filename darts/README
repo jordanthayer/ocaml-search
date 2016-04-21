@@ -1,0 +1,13 @@
+This domain is from Al Zimmermann's Programming Contests [1],
+specifically the "Son of darts" competition [2].
+
+
+[1] http://www.azspcs.net/
+
+[2] http://www.azspcs.net/Contest/SonOfDarts
+
+
+TODO:
+
+        * Look into using a treap or a skiplist instead of the
+          non-self-balancing Int_tree

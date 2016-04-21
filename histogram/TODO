@@ -1,0 +1,21 @@
+* The bound_for_wted_combo function is implemented in OCaml and is
+   fairly inefficient.  This function could be moved to C and changed
+   so that it doesn't allocate and scale a histogram.  Instead it
+   could traverse the histograms as expected.
+
+   Make sure this is implemented properly.  It would appear that using
+   this function is dangerous because it can return a pruning bound
+   that prunes too much weight after a weighted add is performed.
+
+   Maybe it would be beneficial to write a function to accumulate
+   weight across a histogram.  This could then be factored out of a
+   couple other histogram functions too.
+
+* Move the add function to C.  Currently the add function is
+   implemented in OCaml and I think that this makes it a bit slower
+   than is needed.  If this function was moved to C then a bunch of
+   the function calls would be inlined instead of calling them across
+   programming language boundaries.
+
+* points_val_for_weight should interpolate a value on the last point.
+   This is what Wheeler's histogram does.

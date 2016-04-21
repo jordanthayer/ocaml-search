@@ -1,0 +1,9 @@
+playerc/Mclient
+playerc/Common
+playerc/Device
+playerc/Client
+playerc/Position2d
+playerc/Laser
+playerc/Graphics2d
+playerc/Map
+playerc/Simulation

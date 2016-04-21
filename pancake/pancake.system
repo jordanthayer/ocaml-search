@@ -1,0 +1,26 @@
+(* Pancake Domain System File *)
+Systems:
+"wrutils"
+"rdb"
+"structs"
+"search"
+"pdb"
+
+Files:
+"pancake"
+"pancake_sampling"
+"pancake_interfaces"
+"pancake_generator"
+
+Libraries:
+
+Result: "pancake" native "pancake_main"
+Result: "pancake_debug" bytedebug "pancake_main"
+Result: "pancake_prof" nativeprof "pancake_main"
+Result: "pancake_sample_csv" native "pancake_sample_csv"
+Result: "pancake_train_model" native "pancake_train_model"
+Result: "pancake_model_estimation" native "pancake_model_estimation"
+Result: "pancake_model_estimation_debug" bytedebug "pancake_model_estimation"
+
+
+(* EOF *)

@@ -1,0 +1,26 @@
+(* System File *)
+
+Systems:
+"wrutils"
+"structs"
+"offline_fitting"
+
+Files:
+"actionListener"
+"dpq_display"
+"grid_display"
+"node_display"
+"display"
+"run"
+"render"
+"constants"
+"top"
+"scale"
+
+Libraries:
+"lablgtk"
+"lacaml"
+
+CLibraries:
+"gfortran"
+

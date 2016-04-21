@@ -1,0 +1,20 @@
+Systems:
+"wrutils"
+"bounded_depth"
+"blfs"
+
+Files:
+(* weighted setcover *)
+"setcover"
+"setcover_problem"
+"setcover_algs"
+"setcover_runs"
+
+Libraries:
+(* for do_runs *)
+"unix"
+
+Result: "setcover" native "setcover_main"
+Result: "setcover_debug" bytedebug "setcover_main"
+
+(* EOF *)

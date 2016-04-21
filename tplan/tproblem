@@ -1,0 +1,64 @@
+;; simple time blocks world
+;; NORMALIZED BY 2 FOR BUGSY
+
+(define (domain blocks)
+    (:requirements :strips :typing :durative-actions)
+  (:types block table - object)
+  (:constants table - table)
+  (:predicates (on ?a ?b)
+	       (clear ?a))
+  (:durative-action move
+		    :parameters (?block ?from ?to - block)
+		    :duration (= ?duration 1.5)
+		    :condition (and (over all (not (= ?block ?from)))
+				(over all (not (= ?block ?to)))
+				(over all (not (= ?from ?to)))
+				(over all (on ?block ?from))
+			 	(over all (clear ?block))
+				(over all (clear ?to)))
+		    :effect (and (at end (not (on ?block ?from)))
+				 (at end (on ?block ?to))
+				 (at end (not (clear ?to)))
+				 (at end (clear ?from))))
+  (:durative-action stack
+		    :parameters (?block ?to - block)
+		    :duration (= ?duration 2.0)
+		    :condition (and (over all (not (= ?block ?to)))
+				    (over all (on ?block table))
+				    (over all (clear ?block))
+				    (over all (clear ?to)))
+		    :effect (and (at end (not (on ?block table)))
+				 (at end (on ?block ?to))
+				 (at end (not (clear ?to)))))
+  (:durative-action unstack
+		    :parameters (?block ?from - block)
+		    :duration (= ?duration 1.0)
+		    :condition (and (over all (not (= ?block ?from)))
+				    (over all (on ?block ?from))
+				    (over all (clear ?block)))
+		    :effect (and (at end (not (on ?block ?from)))
+				 (at end (on ?block table))
+				 (at end (clear ?from))))
+)
+
+;; EOF
+;; test problems for blocks world
+
+(define (problem test0)
+  (:domain blocks)
+  (:objects b1 b2 b3 b4 - block)
+  (:init (clear b1)
+	 (on b1 b3)
+	 (on b3 table)
+	 (clear b2)
+	 (on b2 table)
+	 (on b4 table)
+	 (clear b4))
+  (:goal (and (on b1 b2)
+	      (on b2 b3)
+	      (on b3 b4)
+	      (on b4 table)))
+  (:metric minimize total-time))
+
+
+;; EOF

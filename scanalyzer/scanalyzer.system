@@ -1,0 +1,14 @@
+Systems:
+"wrutils"
+"rdb"
+"search"
+
+Files:
+"scanalyzer_inst"
+"scanalyzer"
+"scanalyzer_interfaces"
+
+Libraries:
+
+Result: "scanalyzer" native "scanalyzer_main"
+Result: "scanalyzer_debug" nativedebug "scanalyzer_main"

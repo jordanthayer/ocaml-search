@@ -1,0 +1,28 @@
+OASISFormat: 0.2
+Name:        spt
+Version:     0.5
+Synopsis:    A Simple Plotting Tool
+Authors:     Ethan Burns, Jordan Thayer and the UNH AI group
+License:     LGPL-3.0 with OCaml linking exception
+Plugins:     META (0.2), StdFiles (0.2)
+
+Library spt
+  Path:       src
+  BuildTools: ocamlbuild
+  Modules:    Drawing, Factories, Geometry, Legend, Length, Num_by_nom,
+    Num_by_num, Plot_sheet, Verbosity, Spt
+  InternalModules: Boxplot, Errbar, Numeric_axis, Spt_cairo, Spt_gtk,
+    Statistics, Tree_vis, Num_by_nom_dataset, Num_by_num_dataset
+  FindlibName: spt
+  BuildDepends: cairo, cairo.lablgtk2, lacaml, str
+  CompiledObject: best
+  XMETAEnable: true
+  XMETADescription: A Simple Plotting Tool for OCaml programs
+  XMETARequires: cairo, cairo,lablgtk2, lacaml, str
+
+Executable "spt-it-out"
+  Path:       .
+  BuildTools: ocamlbuild
+  MainIs:     src/spt-it-out/spt_it_out.ml
+  BuildDepends: cairo, cairo.lablgtk2, lacaml, str
+  CompiledObject: best

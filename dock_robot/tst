@@ -1,0 +1,41 @@
+nlocations: 5
+ncranes: 5
+ncontainers: 5
+npiles: 5
+nrobots: 1
+location 0
+	adjacent: 0.000000 0.737990 0.079043 1.047710 0.576818 
+	cranes: 0 
+	piles: 0 
+location 1
+	adjacent: 0.737990 0.000000 0.668737 0.353408 0.388536 
+	cranes: 1 
+	piles: 1 
+location 2
+	adjacent: 0.079043 0.668737 0.000000 0.972054 0.498013 
+	cranes: 2 
+	piles: 2 
+location 3
+	adjacent: 1.047710 0.353408 0.972054 0.000000 0.545012 
+	cranes: 3 
+	piles: 3 
+location 4
+	adjacent: 0.576818 0.388536 0.498013 0.545012 0.000000 
+	cranes: 4 
+	piles: 4 
+pile 0
+	0 1 2 3 
+pile 1
+	
+pile 2
+	
+pile 3
+	
+pile 4
+	4 
+container 0 at 3
+container 1 at 0
+container 2 at 2
+container 3 at 1
+container 4 at 3
+
